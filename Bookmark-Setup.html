@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jzarr Day End Report - Bookmark Setup</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f4f7f6;
+      color: #111827;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+    .card {
+      background: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 16px;
+      padding: 36px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    h1 {
+      color: #00563B;
+      margin-top: 0;
+      font-size: 24px;
+    }
+    p {
+      font-size: 15px;
+      color: #4b5563;
+      line-height: 1.6;
+    }
+    .btn-container {
+      margin: 30px 0;
+      padding: 24px;
+      background: #f0fdf4;
+      border: 2px dashed #00563B;
+      border-radius: 12px;
+    }
+    .bookmarklet-btn {
+      display: inline-block;
+      background: #00563B;
+      color: #ffffff !important;
+      text-decoration: none;
+      padding: 14px 28px;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: grab;
+      box-shadow: 0 4px 12px rgba(0,86,59,0.3);
+      transition: transform 0.2s, background 0.2s;
+    }
+    .bookmarklet-btn:hover {
+      background: #00442e;
+      transform: translateY(-2px);
+    }
+    .steps {
+      text-align: left;
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 24px;
+      font-size: 14px;
+    }
+    .steps ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .steps li {
+      margin-bottom: 10px;
+      color: #374151;
+    }
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">1-CLICK BROWSER SETUP</div>
+    <h1>Jzarr Day End Report Auto-Filler</h1>
+    <p>Aapko Console ya F12 kholne ki koi zaroorat nahi hai. Niche diye gaye green button ko pakad kar apne Chrome ke Bookmarks Bar par drag (kheenchna) karein:</p>
+
+    <div class="btn-container">
+      <p style="margin-top:0; font-weight:600; color:#00563B;">👇 Is button ko mouse se pakad kar Chrome Bookmarks Bar par chhor dein:</p>
+      <a class="bookmarklet-btn" href="javascript:(async%20function()%20%7B%20const%20tasks%20%3D%20%5B%7B%22title%22%3A%22Multi-Select%20%26%20Bulk%20Delete%20in%20Packages%20Manager%22%2C%22desc%22%3A%22Added%20multi-select%20checkboxes%2C%20Select%20All%20toggle%2C%20and%20bulk%20delete%20functionality%20in%20the%20admin%20packages%20manager%20to%20allow%20administrators%20to%20remove%20multiple%20packages%20at%20once.%22%7D%2C%7B%22title%22%3A%22Admin%20Panel%20Layout%20%26%20Scrollbar%20Fixes%22%2C%22desc%22%3A%22Resolved%20unwanted%20horizontal%20scrollbars%2C%20layout%20overflows%2C%20and%20top%20background%20color%20inconsistencies%20in%20the%20admin%20panel%20to%20ensure%20a%20clean%2C%20stable%20UI%20across%20all%20views.%22%7D%2C%7B%22title%22%3A%22Live%20Petrol%2C%20Diesel%20%26%20LPG%20Price%20Tracking%20System%22%2C%22desc%22%3A%22Created%20complete%20backend%20and%20frontend%20architecture%20for%20daily%20fuel%20rates%2C%20including%20automated%20scraping%2C%20MySQL%20database%20schema%2C%20Prisma%20migrations%2C%20and%20public%20display.%22%7D%2C%7B%22title%22%3A%22Hot%20Topics%20Architecture%20%26%20SEO%20URL%20Routing%22%2C%22desc%22%3A%22Separated%20Gold%20and%20Fuel%20into%20summary%20cards%20on%20Hot%20Topics%20and%20dedicated%20full-view%20pages%20with%20keyword-rich%20SEO%20URLs%20(%2Fgold-rate-in-pakistan%20and%20%2Fpetrol-rate-in-pakistan).%22%7D%2C%7B%22title%22%3A%22Mobile%20Navigation%20Bar%20%26%20Header%20Polish%22%2C%22desc%22%3A%22Refined%20responsive%20header%20navigation%2C%20improved%20mobile%20touch%20targets%2C%20streamlined%20button%20styling%2C%20and%20enhanced%20readability%20across%20small%20mobile%20screens.%22%7D%2C%7B%22title%22%3A%22Multi-Select%20%26%20Batch%20Deletion%20in%20Fuel%20Manager%22%2C%22desc%22%3A%22Equipped%20the%20fuel%20rates%20admin%20table%20with%20row%20selection%20checkboxes%2C%20select-all%20controls%2C%20and%20batch%20deletion%20capability%20for%20efficient%20rate%20management.%22%7D%2C%7B%22title%22%3A%22Scraper%20Timezone%20%26%20Real-Time%20Price%20Sync%20Fix%22%2C%22desc%22%3A%22Resolved%20date%20discrepancy%20in%20the%20gold%20and%20fuel%20scrapers%20so%20today's%20live%20prices%20match%20the%20current%20date%20accurately%20without%20stale%20or%20cached%20fallback%20values.%22%7D%2C%7B%22title%22%3A%22Removed%20Floating%20Green%20Status%20Badge%22%2C%22desc%22%3A%22Removed%20the%20pulsating%20green%20live%20status%20indicator%20from%20all%20public%20pages%20across%20the%20website%20while%20preserving%20accessibility%20screen-reader%20tags.%22%7D%2C%7B%22title%22%3A%22Route%20Migration%20from%20%2Fhot%20to%20%2Fhot-topics%22%2C%22desc%22%3A%22Renamed%20all%20Hot%20Stories%20navigation%20and%20routes%20to%20%2Fhot-topics%2C%20updating%20menu%20links%2C%20canonical%20headers%2C%20and%20adding%20301%20permanent%20redirects%20for%20older%20URLs.%22%7D%2C%7B%22title%22%3A%22SEO%20Metadata%20Optimization%20for%20Gold%2C%20Fuel%20%26%20Hot%20Topics%22%2C%22desc%22%3A%22Added%20custom%20SEO%20meta%20titles%2C%20descriptions%2C%20and%20OpenGraph%20social%20tags%20across%20Gold%20Rate%2C%20Fuel%20Price%2C%20and%20Hot%20Topics%20overview%20pages%20for%20higher%20search%20visibility.%22%7D%2C%7B%22title%22%3A%22CI%2FCD%20Deployment%20Health%20Check%20%26%20Pipeline%20Fix%22%2C%22desc%22%3A%22Fixed%20deployment%20pipeline%20failure%20by%20enhancing%20curl%20health%20check%20retry%20logic%20and%20resolving%20build%20assertions%20in%20production-deploy.yml%20for%20reliable%20releases.%22%7D%2C%7B%22title%22%3A%22React%20Hydration%20Mismatch%20Resolution%20(Error%20%23418)%22%2C%22desc%22%3A%22Eliminated%20React%20hydration%20errors%20by%20standardizing%20currency%20and%20date%20formatting%20deterministically%20across%20both%20server-side%20rendering%20and%20client%20hydration.%22%7D%2C%7B%22title%22%3A%22Newsletter%20Subscription%20Engine%20%26%20Header%20Navigation%22%2C%22desc%22%3A%22Implemented%20footer%20newsletter%20subscription%2C%20database%20persistence%2C%20and%20smooth-scroll%20auto-focus%20behavior%20for%20the%20top%20header%20Subscribe%20button.%22%7D%2C%7B%22title%22%3A%22Dedicated%20Subscriber%20SMTP%20Configuration%22%2C%22desc%22%3A%22Configured%20isolated%20SiteGround%20SMTP%20settings%20exclusively%20for%20newsletter%20subscribers%2C%20leaving%20existing%20admin%20login%20and%20contact%20form%20credentials%20completely%20untouched.%22%7D%5D%3B%20function%20setVal(el%2C%20val)%20%7B%20if%20(!el)%20return%3B%20const%20proto%20%3D%20el%20instanceof%20HTMLTextAreaElement%20%3F%20HTMLTextAreaElement.prototype%20%3A%20HTMLInputElement.prototype%3B%20const%20setter%20%3D%20Object.getOwnPropertyDescriptor(proto%2C%20'value')%3F.set%20%7C%7C%20Object.getOwnPropertyDescriptor(el%2C%20'value')%3F.set%3B%20if%20(setter)%20setter.call(el%2C%20val)%3B%20else%20el.value%20%3D%20val%3B%20el.dispatchEvent(new%20Event('input'%2C%20%7B%20bubbles%3A%20true%20%7D))%3B%20el.dispatchEvent(new%20Event('change'%2C%20%7B%20bubbles%3A%20true%20%7D))%3B%20%7D%20const%20wait%20%3D%20ms%20%3D%3E%20new%20Promise(r%20%3D%3E%20setTimeout(r%2C%20ms))%3B%20const%20openModalBtn%20%3D%20Array.from(document.querySelectorAll('button')).find(b%20%3D%3E%20b.textContent%20%26%26%20b.textContent.toLowerCase().includes('submit%20day%20end%20report'))%3B%20if%20(openModalBtn%20%26%26%20!document.querySelector('.modal--lg%2C%20form'))%20%7B%20openModalBtn.click()%3B%20await%20wait(300)%3B%20%7D%20console.log('Filling%20'%20%2B%20tasks.length%20%2B%20'%20tasks...')%3B%20for%20(let%20i%20%3D%200%3B%20i%20%3C%20tasks.length%3B%20i%2B%2B)%20%7B%20const%20t%20%3D%20tasks%5Bi%5D%3B%20const%20titles%20%3D%20Array.from(document.querySelectorAll('input%5Btype%3D%22text%22%5D%2C%20input%3Anot(%5Btype%5D)')).filter(inp%20%3D%3E%20!inp.disabled%20%26%26%20!inp.readOnly)%3B%20const%20descs%20%3D%20Array.from(document.querySelectorAll('textarea')).filter(tx%20%3D%3E%20!tx.disabled%20%26%26%20!tx.readOnly)%3B%20if%20(titles%5Bi%5D)%20setVal(titles%5Bi%5D%2C%20t.title)%3B%20if%20(descs%5Bi%5D)%20setVal(descs%5Bi%5D%2C%20(t.desc%20%7C%7C%20'').slice(0%2C%20250))%3B%20await%20wait(120)%3B%20if%20(i%20%3C%20tasks.length%20-%201)%20%7B%20const%20addBtn%20%3D%20Array.from(document.querySelectorAll('button')).find(b%20%3D%3E%20b.textContent%20%26%26%20b.textContent.includes('Add%20another%20item'))%3B%20if%20(addBtn)%20%7B%20addBtn.click()%3B%20await%20wait(220)%3B%20%7D%20%7D%20%7D%20await%20wait(200)%3B%20const%20cb%20%3D%20document.querySelector('input%5Btype%3D%22checkbox%22%5D')%3B%20if%20(cb%20%26%26%20!cb.checked)%20%7B%20cb.click()%3B%20%7D%20const%20toast%20%3D%20document.createElement('div')%3B%20toast.innerText%20%3D%20'%E2%9C%93%20All%20'%20%2B%20tasks.length%20%2B%20'%20tasks%20filled%20successfully!%20Ready%20to%20submit.'%3B%20toast.style.cssText%20%3D%20'position%3Afixed%3Btop%3A20px%3Bleft%3A50%25%3Btransform%3AtranslateX(-50%25)%3Bbackground%3A%2300563B%3Bcolor%3A%23fff%3Bpadding%3A12px%2024px%3Bborder-radius%3A10px%3Bfont-weight%3Abold%3Bz-index%3A999999%3Bbox-shadow%3A0%204px%2015px%20rgba(0%2C0%2C0%2C0.3)%3B'%3B%20document.body.appendChild(toast)%3B%20setTimeout(()%20%3D%3E%20toast.remove()%2C%204000)%3B%20%7D)()%3B" onclick="alert('Is button par click karne ke bajaye isko mouse se pakad kar (Drag karke) apne Chrome ke Bookmarks bar par drop karein!'); return false;">⚡ Fill Day End Report</a>
+    </div>
+
+    <div class="steps">
+      <h3 style="margin-top:0; font-size:15px; color:#111827;">Kaise Use Karein:</h3>
+      <ol>
+        <li>Agar Chrome mein bookmarks bar nazar nahi aa rahi tou <strong>Ctrl + Shift + B</strong> dabayein.</li>
+        <li>Upar wale green button ko mouse se pakad kar Bookmarks bar par drop kardein.</li>
+        <li>Ab <strong>https://data.jzarr.com/day-end-reports</strong> par jayein aur "Submit day end report" modal kholein.</li>
+        <li>Bookmarks bar par <strong>"⚡ Fill Day End Report"</strong> par 1 click karein!</li>
+        <li>Saare 14 tasks automatically fill ho jayenge aur agreement check ho jayegi. Aakhir mein Submit button aap khud click kardein!</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>

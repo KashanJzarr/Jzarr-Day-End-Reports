@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Multi-Select & Bulk Delete in Packages Manager",
+    "desc": "Added multi-select checkboxes, Select All toggle, and bulk delete functionality in the admin packages manager to allow administrators to remove multiple packages at once."
+  },
+  {
+    "title": "Admin Panel Layout & Scrollbar Fixes",
+    "desc": "Resolved unwanted horizontal scrollbars, layout overflows, and top background color inconsistencies in the admin panel to ensure a clean, stable UI across all views."
+  },
+  {
+    "title": "Live Petrol, Diesel & LPG Price Tracking System",
+    "desc": "Created complete backend and frontend architecture for daily fuel rates, including automated scraping, MySQL database schema, Prisma migrations, and public display."
+  },
+  {
+    "title": "Hot Topics Architecture & SEO URL Routing",
+    "desc": "Separated Gold and Fuel into summary cards on Hot Topics and dedicated full-view pages with keyword-rich SEO URLs (/gold-rate-in-pakistan and /petrol-rate-in-pakistan)."
+  },
+  {
+    "title": "Mobile Navigation Bar & Header Polish",
+    "desc": "Refined responsive header navigation, improved mobile touch targets, streamlined button styling, and enhanced readability across small mobile screens."
+  },
+  {
+    "title": "Multi-Select & Batch Deletion in Fuel Manager",
+    "desc": "Equipped the fuel rates admin table with row selection checkboxes, select-all controls, and batch deletion capability for efficient rate management."
+  },
+  {
+    "title": "Scraper Timezone & Real-Time Price Sync Fix",
+    "desc": "Resolved date discrepancy in the gold and fuel scrapers so today's live prices match the current date accurately without stale or cached fallback values."
+  },
+  {
+    "title": "Removed Floating Green Status Badge",
+    "desc": "Removed the pulsating green live status indicator from all public pages across the website while preserving accessibility screen-reader tags."
+  },
+  {
+    "title": "Route Migration from /hot to /hot-topics",
+    "desc": "Renamed all Hot Stories navigation and routes to /hot-topics, updating menu links, canonical headers, and adding 301 permanent redirects for older URLs."
+  },
+  {
+    "title": "SEO Metadata Optimization for Gold, Fuel & Hot Topics",
+    "desc": "Added custom SEO meta titles, descriptions, and OpenGraph social tags across Gold Rate, Fuel Price, and Hot Topics overview pages for higher search visibility."
+  },
+  {
+    "title": "CI/CD Deployment Health Check & Pipeline Fix",
+    "desc": "Fixed deployment pipeline failure by enhancing curl health check retry logic and resolving build assertions in production-deploy.yml for reliable releases."
+  },
+  {
+    "title": "React Hydration Mismatch Resolution (Error #418)",
+    "desc": "Eliminated React hydration errors by standardizing currency and date formatting deterministically across both server-side rendering and client hydration."
+  },
+  {
+    "title": "Newsletter Subscription Engine & Header Navigation",
+    "desc": "Implemented footer newsletter subscription, database persistence, and smooth-scroll auto-focus behavior for the top header Subscribe button."
+  },
+  {
+    "title": "Dedicated Subscriber SMTP Configuration",
+    "desc": "Configured isolated SiteGround SMTP settings exclusively for newsletter subscribers, leaving existing admin login and contact form credentials completely untouched."
+  }
+]

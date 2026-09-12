@@ -1,0 +1,11 @@
+# Sensitive credentials
+config.json
+
+# Temp files
+temp_snippet.txt
+
+# OS and dependencies
+node_modules/
+Thumbs.db
+.DS_Store
+
