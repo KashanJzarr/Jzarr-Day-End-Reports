@@ -8,50 +8,68 @@ const scriptLogic = `(async function() {
     var el = document.createElement('div');
     el.id = 'jzarr-toast';
     el.innerHTML = msg;
-    el.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:' + (isError ? '#dc2626' : '#00563B') + ';color:#fff;padding:12px 24px;border-radius:10px;font-weight:bold;z-index:9999999;box-shadow:0 4px 20px rgba(0,0,0,0.3);font-family:Segoe UI,sans-serif;font-size:14px;max-width:90vw;text-align:center;';
+    el.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:' + (isError ? '#dc2626' : '#00563B') + ';color:#fff;padding:14px 26px;border-radius:12px;font-weight:bold;z-index:9999999;box-shadow:0 6px 25px rgba(0,0,0,0.35);font-family:Segoe UI,sans-serif;font-size:15px;max-width:90vw;text-align:center;';
     document.body.appendChild(el);
-    setTimeout(function() { if (el.parentNode) el.remove(); }, isError ? 6000 : 4000);
+    setTimeout(function() { if (el.parentNode) el.remove(); }, isError ? 7000 : 4500);
   }
 
-  showToast('⏳ Loading latest tasks...');
+  showToast('⏳ Loading fresh tasks from GitHub...');
 
   var tasks = null;
   var source = '';
 
+  // 1. Try local server first (instant if running)
   try {
     var ctrl = new AbortController();
     var tId = setTimeout(function() { ctrl.abort(); }, 350);
-    var localRes = await fetch('http://127.0.0.1:39871/tasks.json', { signal: ctrl.signal });
+    var localRes = await fetch('http://127.0.0.1:39871/tasks.json', { signal: ctrl.signal, cache: 'no-store' });
     clearTimeout(tId);
     if (localRes.ok) {
       tasks = await localRes.json();
-      source = 'Local File';
+      source = 'Local PC Server';
     }
   } catch(e) {}
 
+  // 2. Fetch directly from GitHub API (Bypasses 5-minute CDN cache!)
   if (!tasks) {
     try {
-      var ghUrl = 'https://raw.githubusercontent.com/KashanJzarr/Jzarr-Day-End-Reports/main/tasks.json?t=' + Date.now();
-      var ghRes = await fetch(ghUrl);
-      if (ghRes.ok) {
-        tasks = await ghRes.json();
-        source = 'GitHub';
+      var apiRes = await fetch('https://api.github.com/repos/KashanJzarr/Jzarr-Day-End-Reports/contents/tasks.json?t=' + Date.now(), { cache: 'no-store' });
+      if (apiRes.ok) {
+        var apiData = await apiRes.json();
+        if (apiData && apiData.content) {
+          var bin = atob(apiData.content.replace(/\\s/g, ''));
+          var bytes = Uint8Array.from(bin, function(c) { return c.charCodeAt(0); });
+          tasks = JSON.parse(new TextDecoder().decode(bytes));
+          source = 'GitHub (Live)';
+        }
       }
     } catch(e) {}
   }
 
+  // 3. Fallback: GitHub Raw
+  if (!tasks) {
+    try {
+      var rawRes = await fetch('https://raw.githubusercontent.com/KashanJzarr/Jzarr-Day-End-Reports/main/tasks.json?t=' + Date.now(), { cache: 'no-store' });
+      if (rawRes.ok) {
+        tasks = await rawRes.json();
+        source = 'GitHub Raw';
+      }
+    } catch(e) {}
+  }
+
+  // 4. Fallback: LocalStorage
   if (!tasks) {
     var cached = localStorage.getItem('jzarr_cached_tasks');
     if (cached) {
       try {
         tasks = JSON.parse(cached);
-        source = 'Cached';
+        source = 'Offline Cache';
       } catch(e) {}
     }
   }
 
   if (!tasks || !Array.isArray(tasks) || tasks.length === 0) {
-    showToast('✗ Could not load tasks. Please run Sync-Tasks.bat or Start-Local-Server.bat!', true);
+    showToast('✗ Tasks load nahi ho sake. Please Sync-Tasks.bat run karein!', true);
     return;
   }
 
@@ -102,10 +120,9 @@ const scriptLogic = `(async function() {
     cb.click();
   }
 
-  showToast('✓ All ' + tasks.length + ' tasks filled from ' + source + '! Ready to submit.');
+  showToast('✓ ' + tasks.length + ' tasks filled [' + source + ']! Ready to submit.');
 })();`;
 
-// Minify safely without removing slashes in URLs
 const minified = scriptLogic.replace(/\s+/g, ' ').trim();
 const bookmarkletUrl = 'javascript:' + encodeURIComponent(minified);
 
@@ -113,7 +130,7 @@ const htmlContent = `<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jzarr Day End Report - Permanent Bookmark Setup</title>
+  <title>Jzarr Day End Report - Live Dynamic Bookmark</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -157,8 +174,8 @@ const htmlContent = `<!DOCTYPE html>
       background: #00563B;
       color: #ffffff !important;
       text-decoration: none;
-      padding: 14px 28px;
-      font-size: 16px;
+      padding: 15px 30px;
+      font-size: 17px;
       font-weight: 700;
       border-radius: 10px;
       cursor: grab;
@@ -202,27 +219,27 @@ const htmlContent = `<!DOCTYPE html>
 </head>
 <body>
   <div class="card">
-    <div class="badge">🔥 1-TIME PERMANENT SETUP</div>
+    <div class="badge">🔥 LIVE DYNAMIC BOOKMARK (ONE-TIME SETUP)</div>
     <h1>Jzarr Day End Report Auto-Filler</h1>
-    <p>Ab aapko rozana bookmark drag karne ki bilkul zaroorat nahi hai! Is button ko <strong>sirf ek dafa</strong> apne Bookmarks bar par drag karein:</p>
+    <p>Ye naya button <strong>Live GitHub API</strong> se directly update leta hai (Zero Cache Delay)!</p>
 
     <div class="btn-container">
-      <p style="margin-top:0; font-weight:600; color:#00563B;">👇 Mouse se pakad kar (Drag karke) Bookmarks Bar par drop karein:</p>
-      <a class="bookmarklet-btn" href="${bookmarkletUrl}" onclick="alert('Is button par click karne ke bajaye mouse se pakad kar apne Chrome Bookmarks bar par drag & drop karein!'); return false;">⚡ Fill Day End Report</a>
+      <p style="margin-top:0; font-weight:600; color:#00563B;">👇 Is button ko mouse se pakad kar Bookmarks Bar par drop karein:</p>
+      <a class="bookmarklet-btn" href="${bookmarkletUrl}" onclick="alert('Is button par click karne ke bajaye mouse se pakad kar apne Chrome Bookmarks bar par drag & drop karein!'); return false;">⚡ Jzarr Auto-Fill (LIVE)</a>
     </div>
 
     <div class="steps">
-      <h3 style="margin-top:0; font-size:15px; color:#111827;">Ab Daily Ka Process (Super Easy):</h3>
+      <h3 style="margin-top:0; font-size:15px; color:#111827;">Ab Roz Ka Tariqa:</h3>
       <ol>
-        <li><strong>Step 1:</strong> Apni <code>tasks.json</code> file mein roz ke naye tasks likhein aur save karein (Ctrl + S).</li>
-        <li><strong>Step 2:</strong> Folder mein <strong><code>Sync-Tasks.bat</code></strong> par double-click karein (ye naye tasks ko 2 seconds mein sync kar dega).</li>
-        <li><strong>Step 3:</strong> <strong>https://data.jzarr.com/day-end-reports</strong> par jayein aur bookmarks bar par <strong>"⚡ Fill Day End Report"</strong> daba dein!</li>
+        <li><strong>Step 1:</strong> <code>tasks.json</code> mein naye tasks likhein aur save karein (Ctrl + S).</li>
+        <li><strong>Step 2:</strong> <strong><code>Sync-Tasks.bat</code></strong> par double click karein (ye instant update ho jayega).</li>
+        <li><strong>Step 3:</strong> <strong>https://data.jzarr.com/day-end-reports</strong> par jayein aur bookmarks bar par <strong>"⚡ Jzarr Auto-Fill (LIVE)"</strong> daba dein!</li>
       </ol>
-      <p style="margin:0; font-weight:600; color:#00563B;">✨ Naye tasks automatically load hokar auto-fill ho jayenge! Form aap khud review karke submit karein.</p>
+      <p style="margin:0; font-weight:600; color:#00563B;">✨ Screen par green banner aayega: "✓ 7 tasks filled [GitHub (Live)]!"</p>
     </div>
   </div>
 </body>
 </html>`;
 
 fs.writeFileSync(path.join(__dirname, 'Bookmark-Setup.html'), htmlContent, 'utf8');
-console.log('✓ Successfully regenerated Bookmark-Setup.html with fixed URLs!');
+console.log('✓ Generated live dynamic Bookmark-Setup.html successfully!');
