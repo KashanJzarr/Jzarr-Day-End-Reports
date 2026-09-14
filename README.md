@@ -1,28 +1,25 @@
 # Jzarr Day End Report Auto-Filler (Chrome Bookmark)
 
-Chrome Bookmarklet jo 1-click mein Jzarr Portal ke Day End Report form ke saare tasks aur checkbox ko auto-fill kar deta hai. Form ko **auto-submit nahi karta** taake aap review karke khud submit kar sakein.
+Ek dafa bookmark setup karein aur rozana 1-click mein [Jzarr Portal](https://data.jzarr.com/day-end-reports) ke Day End Report form ke saare tasks aur checkbox ko auto-fill karein!
+
+> 🛡️ **Zero Auto-Submit**: Form auto-submit nahi hota, aap tasalli se review karke khud Submit button click kar sakte hain.
 
 ---
 
-## 🚀 Setup Kaise Karein (Sirf 10 Seconds)
+## ⚡ Pehli Dafa Setup (Sirf Ek Dafa Karna Hai)
 
 1. Apne Chrome browser mein **`Ctrl + Shift + B`** dabayein taake Bookmarks Bar nazar aaye.
-2. Folder mein **`Bookmark-Setup.html`** par double-click karein (ye Chrome mein khul jayega).
-3. Screen par bane green button **"⚡ Fill Day End Report"** ko mouse se pakad kar (Drag karke) apne Chrome ke Bookmarks bar par drop kar dein.
+2. Folder mein **`Bookmark-Setup.html`** open karein.
+3. Green button **"⚡ Fill Day End Report"** ko mouse se pakad kar (Drag karke) apne Bookmarks bar par chhor dein.
+4. **Bas ho gaya!** Ab aapko ye bookmark dobara kabhi bhi drag ya change karne ki zaroorat nahi padegi.
 
 ---
 
-## 📝 Rozana Kaise Use Karein
+## 📝 Rozana Kaise Use Karein (Daily Process)
 
-1. [Jzarr Day End Reports](https://data.jzarr.com/day-end-reports) open karein aur **"Submit day end report"** button par click karein taake modal khul jaye.
-2. Chrome ke bookmarks bar par **"⚡ Fill Day End Report"** par click karein.
-3. Saare tasks auto-fill ho jayenge aur policy checkbox tick ho jayega.
-4. Aakhir mein aap form ko review karke khud **Submit** button click karein!
+1. **Step 1:** Apni `tasks.json` file mein aaj ke naye tasks likhein aur save karein (Ctrl + S).
+2. **Step 2:** Folder mein **`Sync-Tasks.bat`** par double-click karein (ye 2 seconds mein naye tasks sync kar dega).  
+   *(Optionally: Aap `Start-Local-Server.bat` chala sakte hain, jisse sync kiye baghair seedha local file se instant load ho jata hai).*
+3. **Step 3:** [Jzarr Day End Reports](https://data.jzarr.com/day-end-reports) par jayein aur bookmarks bar par **"⚡ Fill Day End Report"** button par 1 click karein!
 
----
-
-## 🔄 Tasks Kaise Change/Update Karein
-
-1. `tasks.json` file mein apne naye tasks likhein aur save karein.
-2. **`Update-Bookmark.bat`** par double-click karein (ye `Bookmark-Setup.html` ko naye tasks ke sath update kar dega).
-3. `Bookmark-Setup.html` open karke naya button dobara bookmarks bar par drag kar lein.
+Saare naye tasks form mein automatically fill ho jayenge aur policy checkbox tick ho jayega.
