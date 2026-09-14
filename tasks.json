@@ -3,10 +3,7 @@
     "title": "Tiptap Editor Link Rel & Target Attributes Fix",
     "desc": "Rich text editor mein links ke rel aur target attributes ka issue solve kiya: default rel clear kiya aur rel='noopener noreferrer nofollow' ko dropdown options ke sath customize kiya."
   },
-  {
-    "title": "Category Subcategories & Header Navbar Restructuring",
-    "desc": "Category pages se subcategories ko clean karke top header navbar mein shift kiya taake navigation structure consistent aur user-friendly rahe."
-  },
+ 
   {
     "title": "Newsletter Subscription Setup & SiteGround SMTP",
     "desc": "Website par newsletter subscription form banaya, email verification implement ki aur SiteGround SMTP ke sath secure email delivery configure ki."
