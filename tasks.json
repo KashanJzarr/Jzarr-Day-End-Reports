@@ -3,31 +3,7 @@
     "title": "Tiptap Editor Link Rel & Target Attributes Fix",
     "desc": "Rich text editor mein links ke rel aur target attributes ka issue solve kiya: default rel clear kiya aur rel='noopener noreferrer nofollow' ko dropdown options ke sath customize kiya."
   },
- 
-  {
-    "title": "Newsletter Broadcasts & News Updates Section",
-    "desc": "Admin panel mein subscribers ko news updates bhejne ka section banaya, jismein custom heading, message aur website par redirect karne wala CTA button shamil hai."
-  },
-  {
-    "title": "Multi-Select Checkboxes & Selective Emailing",
-    "desc": "Subscribers table mein multi-select checkboxes aur Select All ka option add kiya taake admin apni marzi ke mutabiq chuninda subscribers ko email send kar sake."
-  },
-  {
-    "title": "Customizable Welcome Email & Topic Tracking",
-    "desc": "Welcome email customize karne ka admin option banaya aur user subscription source track kiya (e.g. gold, petrol, sports) taake relevant content bheja ja sake."
-  },
-  {
-    "title": "Draft Campaigns & Scheduled Broadcasts",
-    "desc": "Campaigns draft karne aur future time schedule karne ka feature banaya taake decide kiye gaye waqt par background worker auto-broadcast execute kar sake."
-  },
-  {
-    "title": "Automated Daily Rates Alerts (Gold & Petrol)",
-    "desc": "Daily rates schedule banaya jaha se subha 9 baje (ya kisi bhi waqt) subscribers ko gold aur petrol ke verified live rates email boxes mein auto-send hote hain."
-  },
-  {
-    "title": "Combined Rates Option for All Subscribers",
-    "desc": "Admin ke liye toggle add kiya jisse gold ya petrol subscribe karne wale tamam users ko dono categories ke rates ek sath combined send kiye ja sakte hain."
-  },
+
   {
     "title": "Side-by-Side Compact Email Template Design",
     "desc": "Email template redesign kiya: bulky boxes ko chota karke modern 2-column side-by-side layout banaya (Left: Petrol & Fuel, Right: Sarafa Gold Market)."
