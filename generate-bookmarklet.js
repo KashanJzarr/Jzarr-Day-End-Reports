@@ -18,7 +18,6 @@ const scriptLogic = `(async function() {
   var tasks = null;
   var source = '';
 
-  // 1. Try local server first (instant if running)
   try {
     var ctrl = new AbortController();
     var tId = setTimeout(function() { ctrl.abort(); }, 350);
@@ -30,7 +29,6 @@ const scriptLogic = `(async function() {
     }
   } catch(e) {}
 
-  // 2. Fetch directly from GitHub API (Bypasses 5-minute CDN cache!)
   if (!tasks) {
     try {
       var apiRes = await fetch('https://api.github.com/repos/KashanJzarr/Jzarr-Day-End-Reports/contents/tasks.json?t=' + Date.now(), { cache: 'no-store' });
@@ -46,7 +44,6 @@ const scriptLogic = `(async function() {
     } catch(e) {}
   }
 
-  // 3. Fallback: GitHub Raw
   if (!tasks) {
     try {
       var rawRes = await fetch('https://raw.githubusercontent.com/KashanJzarr/Jzarr-Day-End-Reports/main/tasks.json?t=' + Date.now(), { cache: 'no-store' });
@@ -57,7 +54,6 @@ const scriptLogic = `(async function() {
     } catch(e) {}
   }
 
-  // 4. Fallback: LocalStorage
   if (!tasks) {
     var cached = localStorage.getItem('jzarr_cached_tasks');
     if (cached) {
@@ -123,6 +119,7 @@ const scriptLogic = `(async function() {
   showToast('✓ ' + tasks.length + ' tasks filled [' + source + ']! Ready to submit.');
 })();`;
 
+// Zero single-line comments in scriptLogic ensures clean minification
 const minified = scriptLogic.replace(/\s+/g, ' ').trim();
 const bookmarkletUrl = 'javascript:' + encodeURIComponent(minified);
 
@@ -242,4 +239,4 @@ const htmlContent = `<!DOCTYPE html>
 </html>`;
 
 fs.writeFileSync(path.join(__dirname, 'Bookmark-Setup.html'), htmlContent, 'utf8');
-console.log('✓ Generated live dynamic Bookmark-Setup.html successfully!');
+console.log('✓ Successfully regenerated Bookmark-Setup.html without any comments!');
