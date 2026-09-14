@@ -1,12 +1,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const rawCode = `
-(async function() {
-  function toast(msg, isError) {
-    const old = document.getElementById('jzarr-toast');
+const scriptLogic = `(async function() {
+  function showToast(msg, isError) {
+    var old = document.getElementById('jzarr-toast');
     if (old) old.remove();
-    const el = document.createElement('div');
+    var el = document.createElement('div');
     el.id = 'jzarr-toast';
     el.innerHTML = msg;
     el.style.cssText = 'position:fixed;top:20px;left:50%;transform:translateX(-50%);background:' + (isError ? '#dc2626' : '#00563B') + ';color:#fff;padding:12px 24px;border-radius:10px;font-weight:bold;z-index:9999999;box-shadow:0 4px 20px rgba(0,0,0,0.3);font-family:Segoe UI,sans-serif;font-size:14px;max-width:90vw;text-align:center;';
@@ -14,15 +13,14 @@ const rawCode = `
     setTimeout(function() { if (el.parentNode) el.remove(); }, isError ? 6000 : 4000);
   }
 
-  toast('⏳ Loading latest tasks...');
+  showToast('⏳ Loading latest tasks...');
 
   var tasks = null;
   var source = '';
 
-  // 1. Try local server (instant local file sync)
   try {
     var ctrl = new AbortController();
-    var tId = setTimeout(function() { ctrl.abort(); }, 600);
+    var tId = setTimeout(function() { ctrl.abort(); }, 350);
     var localRes = await fetch('http://127.0.0.1:39871/tasks.json', { signal: ctrl.signal });
     clearTimeout(tId);
     if (localRes.ok) {
@@ -31,10 +29,10 @@ const rawCode = `
     }
   } catch(e) {}
 
-  // 2. If local server not active, fetch from GitHub
   if (!tasks) {
     try {
-      var ghRes = await fetch('https://raw.githubusercontent.com/KashanJzarr/Jzarr-Day-End-Reports/main/tasks.json?t=' + Date.now());
+      var ghUrl = 'https://raw.githubusercontent.com/KashanJzarr/Jzarr-Day-End-Reports/main/tasks.json?t=' + Date.now();
+      var ghRes = await fetch(ghUrl);
       if (ghRes.ok) {
         tasks = await ghRes.json();
         source = 'GitHub';
@@ -42,7 +40,6 @@ const rawCode = `
     } catch(e) {}
   }
 
-  // 3. Fallback: cached in localStorage
   if (!tasks) {
     var cached = localStorage.getItem('jzarr_cached_tasks');
     if (cached) {
@@ -54,7 +51,7 @@ const rawCode = `
   }
 
   if (!tasks || !Array.isArray(tasks) || tasks.length === 0) {
-    toast('✗ Could not load tasks. Please run Sync-Tasks.bat or Start-Local-Server.bat!', true);
+    showToast('✗ Could not load tasks. Please run Sync-Tasks.bat or Start-Local-Server.bat!', true);
     return;
   }
 
@@ -105,15 +102,11 @@ const rawCode = `
     cb.click();
   }
 
-  toast('✓ All ' + tasks.length + ' tasks filled from ' + source + '! Ready to submit.');
-})();
-`;
+  showToast('✓ All ' + tasks.length + ' tasks filled from ' + source + '! Ready to submit.');
+})();`;
 
-const minified = rawCode
-  .replace(/\/\/.*$/gm, '')
-  .replace(/\s+/g, ' ')
-  .trim();
-
+// Minify safely without removing slashes in URLs
+const minified = scriptLogic.replace(/\s+/g, ' ').trim();
 const bookmarkletUrl = 'javascript:' + encodeURIComponent(minified);
 
 const htmlContent = `<!DOCTYPE html>
@@ -205,12 +198,6 @@ const htmlContent = `<!DOCTYPE html>
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-    .highlight {
-      background: #fef08a;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-weight: 600;
-    }
   </style>
 </head>
 <body>
@@ -228,7 +215,7 @@ const htmlContent = `<!DOCTYPE html>
       <h3 style="margin-top:0; font-size:15px; color:#111827;">Ab Daily Ka Process (Super Easy):</h3>
       <ol>
         <li><strong>Step 1:</strong> Apni <code>tasks.json</code> file mein roz ke naye tasks likhein aur save karein (Ctrl + S).</li>
-        <li><strong>Step 2:</strong> Folder mein <strong><code>Sync-Tasks.bat</code></strong> par double-click karein (ye naye tasks ko 2 seconds mein sync kar dega).<br><small style="color:#6b7280;">(Ya aap <code>Start-Local-Server.bat</code> chala sakte hain taake sync ki bhi zaroorat na pare).</small></li>
+        <li><strong>Step 2:</strong> Folder mein <strong><code>Sync-Tasks.bat</code></strong> par double-click karein (ye naye tasks ko 2 seconds mein sync kar dega).</li>
         <li><strong>Step 3:</strong> <strong>https://data.jzarr.com/day-end-reports</strong> par jayein aur bookmarks bar par <strong>"⚡ Fill Day End Report"</strong> daba dein!</li>
       </ol>
       <p style="margin:0; font-weight:600; color:#00563B;">✨ Naye tasks automatically load hokar auto-fill ho jayenge! Form aap khud review karke submit karein.</p>
@@ -238,4 +225,4 @@ const htmlContent = `<!DOCTYPE html>
 </html>`;
 
 fs.writeFileSync(path.join(__dirname, 'Bookmark-Setup.html'), htmlContent, 'utf8');
-console.log('✓ Generated permanent Bookmark-Setup.html successfully!');
+console.log('✓ Successfully regenerated Bookmark-Setup.html with fixed URLs!');
