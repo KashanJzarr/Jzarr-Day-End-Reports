@@ -1,9 +1,5 @@
 [
   {
-    "title": "Tiptap Editor Link Rel & Target Attributes Fix",
-    "desc": "Rich text editor mein links ke rel aur target attributes ka issue solve kiya: default rel clear kiya aur rel='noopener noreferrer nofollow' ko dropdown options ke sath customize kiya."
-  },
-  {
     "title": "Mobile-Responsive Email Layout",
     "desc": "Responsive CSS add ki taake mobile screens par side-by-side columns squish na hon balki automatically full-width clean stacked cards mein render hon."
   },
