@@ -1,18 +1,70 @@
 [
   {
-    "title": "Mobile-Responsive Email Layout",
-    "desc": "Responsive CSS add ki taake mobile screens par side-by-side columns squish na hon balki automatically full-width clean stacked cards mein render hon."
+    "title": "Mobile Navbar Button Overflow Fix",
+    "desc": "Resolved button clipping in the mobile top navigation bar by adjusting flex containers, whitespace handling, and horizontal padding, ensuring all action buttons remain fully visible."
   },
   {
-    "title": "Fuel Rates Today's Date Sync Fix",
-    "desc": "PSO sync logic theek kiya taake PSO ke purani announcement date (11 Sep) ke bajaye aaj ki live date (12 Sep) top par record aur display ho."
+    "title": "Hot Topics Mobile Layout Prototyping",
+    "desc": "Experimented with side-by-side and responsive mobile card arrangements for fuel and gold rates to evaluate visual balance, readability, and information density on small screens."
   },
   {
-    "title": "Nightly Rates Auto-Sync (12:15 AM PKT)",
-    "desc": "Background cron worker banaya jo har raat 12:15 AM par Sarafa Gold aur PSO Petrol dono ko auto-sync karta hai taake subha se pehle fresh rates live hon."
+    "title": "Hot Topics Mobile Header & Badge Unification",
+    "desc": "Cleaned up repetitive badges across commodity cards by introducing a single top live market indicator and unified date display, decluttering the mobile user interface."
   },
   {
-    "title": "Database Schema & Prisma Migrations",
-    "desc": "Tamam naye models aur schedule settings ki official Prisma migrations banayein aur deploy kiya, database schema ko 100% up to date kar ke commit kiya."
+    "title": "Mobile Price Card Grid & Action Restructuring",
+    "desc": "Restructured fuel and bullion price metric boxes into clean mobile-optimized grids with compact sizing, dedicated history actions, and optimized vertical rhythm."
+  },
+  {
+    "title": "Gold Admin 15-Minute Automated Sync",
+    "desc": "Implemented background polling to trigger official Sarafa gold rate sync automatically every 15 minutes when the admin page is open, maintaining up-to-date market rates."
+  },
+  {
+    "title": "Unified Single Sync Button with Dual Triggers",
+    "desc": "Consolidated automated background polling and instant on-demand syncing into a single responsive button, eliminating UI clutter while providing real-time loading feedback."
+  },
+  {
+    "title": "Gold Rates Table Sync Time UI Optimization",
+    "desc": "Implemented last sync timestamp tracking in admin tables and refined column spacing based on design feedback to keep table records clean, focused, and legible."
+  },
+  {
+    "title": "Hot Topics SEO Backend Service & Storage",
+    "desc": "Engineered persistent JSON-backed SEO storage with Zod schema validation and Next.js frontend cache revalidation for Hot Topics, Gold Rates, and Petrol Rates pages."
+  },
+  {
+    "title": "Admin SEO & Metadata Management Center",
+    "desc": "Built a multi-tab admin dashboard allowing editors to configure custom Meta Titles, Descriptions, Keywords, Canonical URLs, and OpenGraph social assets per page."
+  },
+  {
+    "title": "Real-Time Google SERP & Social Previews",
+    "desc": "Integrated live Google search result snippets and social media card previews with character counters and search engine length guideline indicators."
+  },
+  {
+    "title": "Server-Side Metadata HTML Source Rendering",
+    "desc": "Connected dynamic generateMetadata routines on public pages to render customized title, meta, canonical, and social tags directly in raw HTML View Page Source."
+  },
+  {
+    "title": "Admin Header Cleanliness & Button Layout Polish",
+    "desc": "Removed shortcut button clutter from manager headers and polished Live Page and Save Changes buttons with whitespace-nowrap and emerald gradient styling."
+  },
+  {
+    "title": "Google Structured Data (JSON-LD) Automation",
+    "desc": "Created automated Schema.org generators for FAQPage, BreadcrumbList, Product rates in PKR, and CollectionPage to earn rich snippet real estate in search results."
+  },
+  {
+    "title": "Document Head Schema Injection Architecture",
+    "desc": "Re-architected structured data pipeline to inject all JSON-LD schemas directly into the HTML document <head> tag, ensuring compliance prior to closing </head>."
+  },
+  {
+    "title": "Flexible Custom Schema Parser & Validator",
+    "desc": "Added intelligent schema sanitizer supporting raw JSON-LD as well as wrapped <script> tags, with real-time syntax validation to catch syntax errors."
+  },
+  {
+    "title": "Custom Schema Override & Single Tag Output",
+    "desc": "Updated head schema pipeline so custom uploaded schemas cleanly override system defaults, ensuring exactly one clean, custom JSON-LD script appears in page head."
+  },
+  {
+    "title": "Zero Database Migration Safety Audit",
+    "desc": "Confirmed that all features utilize resilient file-based storage without database schema modifications or Prisma migrations, guaranteeing risk-free deployment."
   }
 ]
