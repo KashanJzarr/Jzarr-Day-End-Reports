@@ -1,70 +1,78 @@
-[
-  {
-    "title": "Mobile Navbar Button Overflow Fix",
-    "desc": "Resolved button clipping in the mobile top navigation bar by adjusting flex containers, whitespace handling, and horizontal padding, ensuring all action buttons remain fully visible."
-  },
-  {
-    "title": "Hot Topics Mobile Layout Prototyping",
-    "desc": "Experimented with side-by-side and responsive mobile card arrangements for fuel and gold rates to evaluate visual balance, readability, and information density on small screens."
-  },
-  {
-    "title": "Hot Topics Mobile Header & Badge Unification",
-    "desc": "Cleaned up repetitive badges across commodity cards by introducing a single top live market indicator and unified date display, decluttering the mobile user interface."
-  },
-  {
-    "title": "Mobile Price Card Grid & Action Restructuring",
-    "desc": "Restructured fuel and bullion price metric boxes into clean mobile-optimized grids with compact sizing, dedicated history actions, and optimized vertical rhythm."
-  },
-  {
-    "title": "Gold Admin 15-Minute Automated Sync",
-    "desc": "Implemented background polling to trigger official Sarafa gold rate sync automatically every 15 minutes when the admin page is open, maintaining up-to-date market rates."
-  },
-  {
-    "title": "Unified Single Sync Button with Dual Triggers",
-    "desc": "Consolidated automated background polling and instant on-demand syncing into a single responsive button, eliminating UI clutter while providing real-time loading feedback."
-  },
-  {
-    "title": "Gold Rates Table Sync Time UI Optimization",
-    "desc": "Implemented last sync timestamp tracking in admin tables and refined column spacing based on design feedback to keep table records clean, focused, and legible."
-  },
-  {
-    "title": "Hot Topics SEO Backend Service & Storage",
-    "desc": "Engineered persistent JSON-backed SEO storage with Zod schema validation and Next.js frontend cache revalidation for Hot Topics, Gold Rates, and Petrol Rates pages."
-  },
-  {
-    "title": "Admin SEO & Metadata Management Center",
-    "desc": "Built a multi-tab admin dashboard allowing editors to configure custom Meta Titles, Descriptions, Keywords, Canonical URLs, and OpenGraph social assets per page."
-  },
-  {
-    "title": "Real-Time Google SERP & Social Previews",
-    "desc": "Integrated live Google search result snippets and social media card previews with character counters and search engine length guideline indicators."
-  },
-  {
-    "title": "Server-Side Metadata HTML Source Rendering",
-    "desc": "Connected dynamic generateMetadata routines on public pages to render customized title, meta, canonical, and social tags directly in raw HTML View Page Source."
-  },
-  {
-    "title": "Admin Header Cleanliness & Button Layout Polish",
-    "desc": "Removed shortcut button clutter from manager headers and polished Live Page and Save Changes buttons with whitespace-nowrap and emerald gradient styling."
-  },
-  {
-    "title": "Google Structured Data (JSON-LD) Automation",
-    "desc": "Created automated Schema.org generators for FAQPage, BreadcrumbList, Product rates in PKR, and CollectionPage to earn rich snippet real estate in search results."
-  },
-  {
-    "title": "Document Head Schema Injection Architecture",
-    "desc": "Re-architected structured data pipeline to inject all JSON-LD schemas directly into the HTML document <head> tag, ensuring compliance prior to closing </head>."
-  },
-  {
-    "title": "Flexible Custom Schema Parser & Validator",
-    "desc": "Added intelligent schema sanitizer supporting raw JSON-LD as well as wrapped <script> tags, with real-time syntax validation to catch syntax errors."
-  },
-  {
-    "title": "Custom Schema Override & Single Tag Output",
-    "desc": "Updated head schema pipeline so custom uploaded schemas cleanly override system defaults, ensuring exactly one clean, custom JSON-LD script appears in page head."
-  },
-  {
-    "title": "Zero Database Migration Safety Audit",
-    "desc": "Confirmed that all features utilize resilient file-based storage without database schema modifications or Prisma migrations, guaranteeing risk-free deployment."
-  }
-]
+ [
+    {
+      "title": "Website & Brand Identity Analysis",
+      "desc": "Analyzed existing jzarrtech.com website to extract core company information, services, visual identity, tech stack, and corporate positioning before commencing frontend redesign."
+    },
+    {
+      "title": "Core PHP Architecture & Modular Setup",
+      "desc": "Built a modular PHP codebase featuring reusable navbar and footer components across 7 main pages: index, about, services, portfolio, technology, process, and contact."
+    },
+    {
+      "title": "Light Theme & Visual Tokens Setup",
+      "desc": "Implemented a clean light theme design system with custom CSS variables for typography (Outfit, JetBrains Mono), neon purple/cyan gradients, and soft shadow elevations."
+    },
+    {
+      "title": "Figma & Reference Design Alignment",
+      "desc": "Analyzed uploaded design reference images and Figma project files to recreate section order, layout spacing, visual rhythm, and card structures."
+    },
+    {
+      "title": "Three.js 3D Gyroscopic Orbit Engine",
+      "desc": "Engineered a WebGL 3D gyroscopic stage in the hero section using Three.js with multi-axis rotating Torus rings, ambient lighting, and orbiting satellite spheres."
+    },
+    {
+      "title": "Hero 3D Orbit Side-Clipping Fix",
+      "desc": "Expanded hero 3D orbit viewport height to 560px and adjusted camera distance to z=420 to prevent multi-axis gyroscopic rings from clipping on screen edges."
+    },
+    {
+      "title": "Full-Hero Ambient Background Canvas",
+      "desc": "Extended floating particle dots canvas across the entire hero section background featuring 75 drifting navy, purple, and cyan dots with subtle constellation lines."
+    },
+    {
+      "title": "Official 3D JT TECH Logo Integration",
+      "desc": "Integrated user-uploaded 3D JT TECH brand mark into the navbar, footer, center of hero 3D orbit, and Section 02 orbit using crisp guaranteed HTML overlays."
+    },
+    {
+      "title": "Section 02 Interactive Vector Network Orbit",
+      "desc": "Built a live 2D/3D system orbit in Section 02 featuring 7 revolving technology nodes (Cloud, Web, Mobile, Data, AI, Platforms, Products) with vector icons."
+    },
+    {
+      "title": "Section 03 Architectural Redesign",
+      "desc": "Removed the 'Watch Our Story' image frame and transformed Section 03 into a balanced 2-column layout with corporate hierarchy tree panel and metrics pills."
+    },
+    {
+      "title": "Capabilities Bento Matrix Implementation",
+      "desc": "Replaced blank canvas in Section 04 with an interactive 6-pillar bento grid highlighting Cloud, Web, Mobile, AI, E-Commerce, and UI/UX engineering capabilities."
+    },
+    {
+      "title": "Services Section Restructuring (Manager Brief)",
+      "desc": "Restructured homepage and services page into 3 core categories (Development, AI & Automation, Digital Marketing) with 11 specialized solution cards and CTAs."
+    },
+    {
+      "title": "Full Services Page 11-Solution Breakdown",
+      "desc": "Created comprehensive detail panels for all 11 services on services.php, incorporating complete 'What We Build' scope items and custom action buttons."
+    },
+    {
+      "title": "Unique Subpage Hero Telemetry Modules",
+      "desc": "Customized hero sections across all 6 subpages with distinct widgets including Domain Filter Ribbon, Enterprise DNA Checklist, Sprint Stepper, and Priority Cards."
+    },
+    {
+      "title": "Section 02 Orbit Enlargement & Alignment",
+      "desc": "Enlarged Section 02 orbit canvas to 620x620px with 205px radius, locked vertical center alignment with narrative text, and ensured zero layout clipping."
+    },
+    {
+      "title": "Flagship Project Showcase Redesign",
+      "desc": "Overhauled Section 06 into a full-width Red Apple Superstore showcase card with live impact metrics, realistic device mockup, and removed side thumbnail box."
+    },
+    {
+      "title": "Horizontal Section Overflow Resolution",
+      "desc": "Applied strict CSS overflow constraints (overflow-x: clip) and container box-sizing rules across all sections to eliminate right-side screen spilling."
+    },
+    {
+      "title": "Active Button Visual Theme Standardization",
+      "desc": "Updated active filter buttons across technology stack and portfolio tabs from bright purple to sleek dark navy (#07152f) matching the primary navbar CTA button."
+    },
+    {
+      "title": "Static HTML Build Pipeline & Offline Compilation",
+      "desc": "Developed and executed an automated Python compilation script converting master PHP templates into 7 standalone HTML files for seamless browser file:// execution."
+    }
+  ]
