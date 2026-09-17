@@ -1,78 +1,62 @@
- [
-    {
-      "title": "Website & Brand Identity Analysis",
-      "desc": "Analyzed existing jzarrtech.com website to extract core company information, services, visual identity, tech stack, and corporate positioning before commencing frontend redesign."
-    },
-    {
-      "title": "Core PHP Architecture & Modular Setup",
-      "desc": "Built a modular PHP codebase featuring reusable navbar and footer components across 7 main pages: index, about, services, portfolio, technology, process, and contact."
-    },
-    {
-      "title": "Light Theme & Visual Tokens Setup",
-      "desc": "Implemented a clean light theme design system with custom CSS variables for typography (Outfit, JetBrains Mono), neon purple/cyan gradients, and soft shadow elevations."
-    },
-    {
-      "title": "Figma & Reference Design Alignment",
-      "desc": "Analyzed uploaded design reference images and Figma project files to recreate section order, layout spacing, visual rhythm, and card structures."
-    },
-    {
-      "title": "Three.js 3D Gyroscopic Orbit Engine",
-      "desc": "Engineered a WebGL 3D gyroscopic stage in the hero section using Three.js with multi-axis rotating Torus rings, ambient lighting, and orbiting satellite spheres."
-    },
-    {
-      "title": "Hero 3D Orbit Side-Clipping Fix",
-      "desc": "Expanded hero 3D orbit viewport height to 560px and adjusted camera distance to z=420 to prevent multi-axis gyroscopic rings from clipping on screen edges."
-    },
-    {
-      "title": "Full-Hero Ambient Background Canvas",
-      "desc": "Extended floating particle dots canvas across the entire hero section background featuring 75 drifting navy, purple, and cyan dots with subtle constellation lines."
-    },
-    {
-      "title": "Official 3D JT TECH Logo Integration",
-      "desc": "Integrated user-uploaded 3D JT TECH brand mark into the navbar, footer, center of hero 3D orbit, and Section 02 orbit using crisp guaranteed HTML overlays."
-    },
-    {
-      "title": "Section 02 Interactive Vector Network Orbit",
-      "desc": "Built a live 2D/3D system orbit in Section 02 featuring 7 revolving technology nodes (Cloud, Web, Mobile, Data, AI, Platforms, Products) with vector icons."
-    },
-    {
-      "title": "Section 03 Architectural Redesign",
-      "desc": "Removed the 'Watch Our Story' image frame and transformed Section 03 into a balanced 2-column layout with corporate hierarchy tree panel and metrics pills."
-    },
-    {
-      "title": "Capabilities Bento Matrix Implementation",
-      "desc": "Replaced blank canvas in Section 04 with an interactive 6-pillar bento grid highlighting Cloud, Web, Mobile, AI, E-Commerce, and UI/UX engineering capabilities."
-    },
-    {
-      "title": "Services Section Restructuring (Manager Brief)",
-      "desc": "Restructured homepage and services page into 3 core categories (Development, AI & Automation, Digital Marketing) with 11 specialized solution cards and CTAs."
-    },
-    {
-      "title": "Full Services Page 11-Solution Breakdown",
-      "desc": "Created comprehensive detail panels for all 11 services on services.php, incorporating complete 'What We Build' scope items and custom action buttons."
-    },
-    {
-      "title": "Unique Subpage Hero Telemetry Modules",
-      "desc": "Customized hero sections across all 6 subpages with distinct widgets including Domain Filter Ribbon, Enterprise DNA Checklist, Sprint Stepper, and Priority Cards."
-    },
-    {
-      "title": "Section 02 Orbit Enlargement & Alignment",
-      "desc": "Enlarged Section 02 orbit canvas to 620x620px with 205px radius, locked vertical center alignment with narrative text, and ensured zero layout clipping."
-    },
-    {
-      "title": "Flagship Project Showcase Redesign",
-      "desc": "Overhauled Section 06 into a full-width Red Apple Superstore showcase card with live impact metrics, realistic device mockup, and removed side thumbnail box."
-    },
-    {
-      "title": "Horizontal Section Overflow Resolution",
-      "desc": "Applied strict CSS overflow constraints (overflow-x: clip) and container box-sizing rules across all sections to eliminate right-side screen spilling."
-    },
-    {
-      "title": "Active Button Visual Theme Standardization",
-      "desc": "Updated active filter buttons across technology stack and portfolio tabs from bright purple to sleek dark navy (#07152f) matching the primary navbar CTA button."
-    },
-    {
-      "title": "Static HTML Build Pipeline & Offline Compilation",
-      "desc": "Developed and executed an automated Python compilation script converting master PHP templates into 7 standalone HTML files for seamless browser file:// execution."
-    }
-  ]
+[
+  {
+    "title": "Off-Canvas Mobile Navigation Drawer",
+    "desc": "Engineered a smooth off-canvas mobile navigation drawer sliding from the right with backdrop blur overlay, sticky header, numbered cyber links, direct consultation buttons, and body scroll lock for an ultra-responsive native app experience."
+  },
+  {
+    "title": "WhatsApp Floating Action Widget",
+    "desc": "Integrated a fixed bottom-right WhatsApp action widget featuring a continuous radar pulse halo animation, interactive hover tooltip, and direct deep-link pre-filled with an enterprise consultation greeting."
+  },
+  {
+    "title": "Official Email & Branding Update",
+    "desc": "Updated company official email across configuration, header meta tags, direct consultation cards, mobile drawer, and footer to info@jzarrtech.com for consistent corporate identity."
+  },
+  {
+    "title": "Pure PHP SMTP Socket Engine & .env Integration",
+    "desc": "Built a zero-dependency TLS/SSL socket SMTP mailer connecting to port 465, parsed .env credentials securely, implemented CSRF validation, anti-spam honeypot, and fail-safe lead backup in leads.json."
+  },
+  {
+    "title": "AJAX Contact Form & Inline Status Feedback",
+    "desc": "Refactored consultation form to submit asynchronously via AJAX with button loading states, removed duplicate top flash banners, and integrated seamless inline transmission feedback directly under the button."
+  },
+  {
+    "title": "Live Production Projects Integration",
+    "desc": "Linked real-world deployed client projects (Elvify AI Studio, Jzarr Filers Portal, Red Apple Superstore) across the portfolio grid, device mockups, and telemetry console with direct visit badges."
+  },
+  {
+    "title": "Homepage Client Testimonials & Social Proof",
+    "desc": "Replaced homepage work section with modular client testimonials component featuring a 5-star trust badge card, a 4-metric enterprise KPI ribbon, verified client case quotes, and bottom conversion CTAs."
+  },
+  {
+    "title": "Mobile Horizontal Touch Carousels",
+    "desc": "Converted tall vertical card stacks for Testimonials, Portfolio discovery cards, and Services solutions into swipeable horizontal touch tracks with CSS scroll-snap, hidden scrollbars, and swipe hints."
+  },
+  {
+    "title": "Mobile Excessive Vertical Space Elimination",
+    "desc": "Eliminated 200px+ wasted white spaces between consecutive sections on mobile screens by overriding global section padding to 36px, removing hardcoded inline margins, and tightening header spacing."
+  },
+  {
+    "title": "Official Favicon & Multi-Platform Icons",
+    "desc": "Generated pixel-crisp favicons (32x32, 180x180 Apple touch icon, 192x192, and root favicon.ico) from the official JZARR Tech logo and updated header tags for seamless browser and bookmark recognition."
+  },
+  {
+    "title": "Standalone Static HTML Exports",
+    "desc": "Generated pre-rendered standalone .html files for all 7 primary pages with auto-mapped internal navigation links, enabling offline previews and zero-config deployment on static hosting platforms."
+  },
+  {
+    "title": "Page Title & Meta Tag Deduplication",
+    "desc": "Resolved duplicate brand titles in header.php by introducing smart containment checks, ensuring clean page titles like 'Contact Us | JZARR Tech' and dynamic per-page SEO meta descriptions."
+  },
+  {
+    "title": "Enterprise .htaccess & Security Configuration",
+    "desc": "Configured production Apache rules for single-hop HTTPS/apex canonicalization, clean extensionless URLs, strict .env and .md blocking, high-performance Gzip/Brotli compression, and immutable asset caching."
+  },
+  {
+    "title": "Custom Branded 404 Error Page Infrastructure",
+    "desc": "Designed and routed a custom cyber-luxury 404.html error page via ErrorDocument directive, guiding visitors back to the homepage and service solutions instead of showing generic server error screens."
+  },
+  {
+    "title": "Architecture Documentation & HISTORY.md Log",
+    "desc": "Authored a full README.md overview and an in-depth HISTORY.md architectural log detailing the complete chronological development roadmap, component hierarchy, and guidelines for future engineers."
+  }
+]
