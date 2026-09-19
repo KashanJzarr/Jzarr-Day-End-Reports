@@ -1,86 +1,62 @@
 [
   {
-    "title": "Official Favicon Integration",
-    "desc": "Configured official multi-resolution favicon suite (32x32, 192x192, Apple touch icon, and .ico) with circular brand styling across all templates."
+    "title": "Dynamic Tab Services Counter Fix",
+    "desc": "Fixed the services tab counter so each tab displays its own specific item count (e.g., 1/4 or 1/5) rather than the global total count across all categories, ensuring accurate navigation numbers."
   },
   {
-    "title": "Custom 404 Error Page & Routing Setup",
-    "desc": "Built and styled custom 404 error page (404.php/404.html), configured .htaccess error routing, integrated header/footer, and refined viewport alignment."
+    "title": "DineDraft Live Platform Link Integration",
+    "desc": "Integrated the verified live URL (https://dinedraft.com/) into the DineDraft portfolio showcase, production shipments monitor, and case study cards so visitors can directly test and view the platform live."
   },
   {
-    "title": "Global HD Logo Deployment & Asset Cleanup",
-    "desc": "Replaced legacy branding with high-resolution JZARR Tech logo across all pages, removed unused assets, and standardized image alt, width, and height attributes."
+    "title": "Architecture of Dedicated Project Case Studies System",
+    "desc": "Architected an elevated case study system featuring dedicated project pages, multi-image screenshot galleries, challenge and solution breakdowns, KPI metrics ribbons, and live platform redirection links."
   },
   {
-    "title": "Clean URL Architecture & SEO Canonicalization",
-    "desc": "Configured Apache rewrite rules and PHP canonical redirects to enforce extensionless clean URLs (e.g., /about, /contact) without exposing .php extensions."
+    "title": "Centralized Project Data Repository",
+    "desc": "Built a single-source-of-truth project repository (projects-data.php) containing structured metadata, tech stacks, performance metrics, client profiles, and gallery assets for all flagship applications."
   },
   {
-    "title": "Site-Wide Call-to-Action Buttons Redesign",
-    "desc": "Refactored UI of key CTAs ('Direct Email', 'Speak with Leadership', 'Book Consultation', 'Estimate Project') with higher contrast gradients and hover effects."
+    "title": "Category Filter Pill Contrast & Styling Fix",
+    "desc": "Resolved an active state styling bug where selected category filter pills had invisible white text on transparent backgrounds. Defined missing CSS variables and reinforced active contrast styling."
   },
   {
-    "title": "Homepage Section Spacing & Counter Harmonization",
-    "desc": "Removed excessive vertical whitespace between homepage sections and synchronized section numbering badges to maintain structured visual pacing."
+    "title": "Case Study Clean URL & Parameter Routing Fix",
+    "desc": "Fixed clean URL redirect logic in header.php that previously stripped query strings and caused every project card to open DineDraft. Added support for clean /project/{slug} routing without data loss."
   },
   {
-    "title": "Consultation Section Upgrade & Address Update",
-    "desc": "Upgraded visual hierarchy of consultation CTAs across Home and Capabilities pages and updated corporate office address to Gulshan-e-Iqbal, Karachi."
+    "title": "Portfolio Card Redesign & Compact Layout",
+    "desc": "Restyled portfolio project cards into a compact modern format by adjusting media aspect ratios to 16:9, tightening card padding, clamping descriptions, and optimizing badge sizing for clean UI."
   },
   {
-    "title": "Corporate Legal & Compliance Pages Creation",
-    "desc": "Engineered responsive, branded legal pages for Privacy Policy, Terms of Service, and Disclaimer with custom layouts and mobile footer link integration."
+    "title": "Mobile Horizontal Swipe Carousel Implementation",
+    "desc": "Enabled a horizontal swipe carousel for mobile devices with CSS scroll-snap, peek preview widths, a custom branded scrollbar, and visual swipe hints, ensuring smooth touchscreen navigation."
   },
   {
-    "title": "Contact Page Layout & Alignment Restoration",
-    "desc": "Restored two-column balanced architecture on the Contact page, aligning direct communication channels with interactive consultation inquiry forms."
+    "title": "Side-by-Side Gallery Showcase Redesign",
+    "desc": "Re-architected the case study page layout by positioning the thumbnail image gallery to the right side of the main preview screen, optimizing viewport hierarchy and eliminating excessive scrolling."
   },
   {
-    "title": "Mobile Navigation Drawer Complete Re-architecture",
-    "desc": "Redesigned mobile header with centered logo, right-side CTA button, and a smooth left-opening navigation drawer with branded close controls."
+    "title": "Gallery Card Whitespace & Gap Tightening",
+    "desc": "Eliminated awkward vertical gaps between gallery thumbnail cards by replacing space-between flex alignment with a compact 10px spacing, enabling instant one-click switching of main preview images."
   },
   {
-    "title": "Workspace & Build Scripts Cleanup",
-    "desc": "Audited workspace directories, removing deprecated temporary Python automation scripts and intermediate build files from the scratch folder."
+    "title": "Flagship Project Integration: Pehle Pakistan",
+    "desc": "Added the 'Pehle Pakistan' national news platform (pehlepakistan.pk) as a flagship project, incorporating high-res mockups, 3.2M+ pageview metrics, editorial CMS specs, and verified live platform links."
   },
   {
-    "title": "Landing System Analysis & Architecture Ingestion",
-    "desc": "Analyzed and integrated modular landing directory containing primary landing template and 10 specialized sub-service digital engineering pages."
+    "title": "Media & Publishing Category Filter Addition",
+    "desc": "Introduced a new 'Media & Publishing' category filter pill to the portfolio grid with dedicated green status accents, incrementing the total project counter to 06 and enabling instant category filtering."
   },
   {
-    "title": "Landing URL Routing & Architecture Integration",
-    "desc": "Integrated landing system into core architecture, adding rewrite rules and router mappings for /landing and dedicated /landing/{service} endpoints."
+    "title": "Production Shipments Console Live Monitor Update",
+    "desc": "Updated the cyber console monitor on the portfolio hero section to track 6 live production systems, featuring Pehle Pakistan with real-time green uptime indicators and direct external visit links."
   },
   {
-    "title": "Landing Header Branding & Root Navigation Linking",
-    "desc": "Integrated official HD logo across all 11 landing headers and configured navigation Home button to route directly to main website root domain."
+    "title": "Static HTML & PHP Template Synchronization",
+    "desc": "Synchronized dynamic PHP project pages and portfolio components into static HTML files (portfolio.html and project-details.html), ensuring seamless client-side viewing and deployment consistency."
   },
   {
-    "title": "Homepage 7-Step Process Section Implementation",
-    "desc": "Engineered interactive 7-step engineering process section on homepage and updated global section counters from 01/07 to 07/07 across all components."
-  },
-  {
-    "title": "Client Testimonials Horizontal Carousel Redesign",
-    "desc": "Converted Testimonials into clean horizontal scrolling carousel with floating left/right navigation controls on desktop and touch swipe on mobile."
-  },
-  {
-    "title": "Global Footer Synchronization Across Landing Pages",
-    "desc": "Replaced legacy landing footer with official 4-column corporate tech footer across main landing page and all 10 sub-service landing pages."
-  },
-  {
-    "title": "Official Contact Email Standardization",
-    "desc": "Updated placeholder email addresses across all landing page Project Builder sections and components to official email info@jzarrtech.com."
-  },
-  {
-    "title": "Landing Favicon Suite Synchronization",
-    "desc": "Linked official multi-resolution favicon suite into main landing page and all 10 sub-services, copying assets for seamless browser tab branding."
-  },
-  {
-    "title": "Hero Eyebrow & Section 03 Heading Modernization",
-    "desc": "Updated homepage hero tag to JZARR TECH × TECHNOLOGY and modernized Section 03 tracker heading from ABOUT JZARR TECH to DISCOVER JZARR TECH."
-  },
-  {
-    "title": "About Us Page Section Eyebrows Interchanging",
-    "desc": "Interchanged eyebrow tags on /about: positioned ABOUT JZARR TECH in hero section and ENTERPRISE TECHNOLOGY DIVISION • JZARR GROUP in corporate story."
+    "title": "Homepage PHP Syntax Error & Routing Resolution",
+    "desc": "Resolved an unclosed curly brace syntax error in index.php that caused a line 70 parse error. Restored full functionality to the homepage and route handlers across local and production web servers."
   }
 ]
