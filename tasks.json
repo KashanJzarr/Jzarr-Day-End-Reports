@@ -1,62 +1,54 @@
 [
   {
-    "title": "Dynamic Tab Services Counter Fix",
-    "desc": "Fixed the services tab counter so each tab displays its own specific item count (e.g., 1/4 or 1/5) rather than the global total count across all categories, ensuring accurate navigation numbers."
+    "title": "Portfolio Page Complete Redesign",
+    "desc": "Redesigned the portfolio page with interactive category filter tabs, high-impact case study cards, tech stack pills, KPI metrics, client badges, and direct project detail links matching the executive light theme."
   },
   {
-    "title": "DineDraft Live Platform Link Integration",
-    "desc": "Integrated the verified live URL (https://dinedraft.com/) into the DineDraft portfolio showcase, production shipments monitor, and case study cards so visitors can directly test and view the platform live."
+    "title": "Dynamic Project Details Engine",
+    "desc": "Built dynamic project-details page and centralized projects-data structure with comprehensive project profiles, challenge-solution breakdowns, architecture blueprints, and quantifiable client impact metrics."
   },
   {
-    "title": "Architecture of Dedicated Project Case Studies System",
-    "desc": "Architected an elevated case study system featuring dedicated project pages, multi-image screenshot galleries, challenge and solution breakdowns, KPI metrics ribbons, and live platform redirection links."
+    "title": "Interactive Tabbed Services Showcase",
+    "desc": "Overhauled homepage and services page tabbed sections with interactive category switching, deep-dive deliverables, tech stack chips, and high-conversion consult CTA buttons."
   },
   {
-    "title": "Centralized Project Data Repository",
-    "desc": "Built a single-source-of-truth project repository (projects-data.php) containing structured metadata, tech stacks, performance metrics, client profiles, and gallery assets for all flagship applications."
+    "title": "Platform-Wide Light Theme Transformation",
+    "desc": "Standardized the entire website across all core pages to JZARR Tech's executive light theme with polished navy typography, subtle slate borders, elevated white cards, and purple brand accents."
   },
   {
-    "title": "Category Filter Pill Contrast & Styling Fix",
-    "desc": "Resolved an active state styling bug where selected category filter pills had invisible white text on transparent backgrounds. Defined missing CSS variables and reinforced active contrast styling."
+    "title": "Universal Landing Pages Architecture",
+    "desc": "Synchronized and standardized all 11 dedicated service landing pages with a unified master CSS framework, consistent header navigation, and optimized conversion funnels."
   },
   {
-    "title": "Case Study Clean URL & Parameter Routing Fix",
-    "desc": "Fixed clean URL redirect logic in header.php that previously stripped query strings and caused every project card to open DineDraft. Added support for clean /project/{slug} routing without data loss."
+    "title": "Mobile Horizontal Touch Carousels",
+    "desc": "Implemented touch-friendly horizontal swipe carousels with CSS snap points, visible purple scrollbars, and interactive swipe guides for process steps, tech radars, and case study cards."
   },
   {
-    "title": "Portfolio Card Redesign & Compact Layout",
-    "desc": "Restyled portfolio project cards into a compact modern format by adjusting media aspect ratios to 16:9, tightening card padding, clamping descriptions, and optimizing badge sizing for clean UI."
+    "title": "Interactive 2-Step Project Builder",
+    "desc": "Engineered a high-conversion 2-step quotation wizard with an animated progress stepper, modern input fields, and vibrant gradient CTA buttons to boost lead acquisition."
   },
   {
-    "title": "Mobile Horizontal Swipe Carousel Implementation",
-    "desc": "Enabled a horizontal swipe carousel for mobile devices with CSS scroll-snap, peek preview widths, a custom branded scrollbar, and visual swipe hints, ensuring smooth touchscreen navigation."
+    "title": "Mobile 2-Column Options Grid",
+    "desc": "Optimized mobile service selection into a compact 2-column tile grid with custom squircle icons and check indicators, preventing vertical fatigue and layout clipping."
   },
   {
-    "title": "Side-by-Side Gallery Showcase Redesign",
-    "desc": "Re-architected the case study page layout by positioning the thumbnail image gallery to the right side of the main preview screen, optimizing viewport hierarchy and eliminating excessive scrolling."
+    "title": "Mobile Viewport and Clutter Optimization",
+    "desc": "Hidden bulky address boxes on mobile screens to prioritize immediate form access, condensed trust guarantees into a 3-badge micro-strip, and eliminated horizontal overflow bugs."
   },
   {
-    "title": "Gallery Card Whitespace & Gap Tightening",
-    "desc": "Eliminated awkward vertical gaps between gallery thumbnail cards by replacing space-between flex alignment with a compact 10px spacing, enabling instant one-click switching of main preview images."
+    "title": "Responsive Footer 2-Column Grid",
+    "desc": "Restructured mobile footer into a balanced 2-column grid placing Capabilities and Company side-by-side, cutting unnecessary vertical scroll length while keeping full navigation intact."
   },
   {
-    "title": "Flagship Project Integration: Pehle Pakistan",
-    "desc": "Added the 'Pehle Pakistan' national news platform (pehlepakistan.pk) as a flagship project, incorporating high-res mockups, 3.2M+ pageview metrics, editorial CMS specs, and verified live platform links."
+    "title": "Executive Proposal Suite Development",
+    "desc": "Designed an official partnership proposal in both 16:9 landscape slides and formal A4 PDF formats with 100% content fidelity and an interactive browser-based presentation viewer."
   },
   {
-    "title": "Media & Publishing Category Filter Addition",
-    "desc": "Introduced a new 'Media & Publishing' category filter pill to the portfolio grid with dedicated green status accents, incrementing the total project counter to 06 and enabling instant category filtering."
+    "title": "Brand Lockup and Logo Proportion Fix",
+    "desc": "Corrected logo squashing by locking the true 1.0633:1 aspect ratio and built executive corporate brand badges pairing the emblem with crisp typography and subtle borders."
   },
   {
-    "title": "Production Shipments Console Live Monitor Update",
-    "desc": "Updated the cyber console monitor on the portfolio hero section to track 6 live production systems, featuring Pehle Pakistan with real-time green uptime indicators and direct external visit links."
-  },
-  {
-    "title": "Static HTML & PHP Template Synchronization",
-    "desc": "Synchronized dynamic PHP project pages and portfolio components into static HTML files (portfolio.html and project-details.html), ensuring seamless client-side viewing and deployment consistency."
-  },
-  {
-    "title": "Homepage PHP Syntax Error & Routing Resolution",
-    "desc": "Resolved an unclosed curly brace syntax error in index.php that caused a line 70 parse error. Restored full functionality to the homepage and route handlers across local and production web servers."
+    "title": "Production Workspace Sanitization",
+    "desc": "Cleaned up temporary generation scripts and build folders from the project workspace while preserving secure archives in local backup storage for future client delivery."
   }
 ]
