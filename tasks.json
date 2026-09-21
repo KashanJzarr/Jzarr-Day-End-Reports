@@ -1,54 +1,34 @@
 [
   {
-    "title": "Portfolio Page Complete Redesign",
-    "desc": "Redesigned the portfolio page with interactive category filter tabs, high-impact case study cards, tech stack pills, KPI metrics, client badges, and direct project detail links matching the executive light theme."
+    "title": "Dr. Asim Enterprise Proposal Design",
+    "desc": "Designed official clinical decision support system proposal in JZARR Tech light theme with authentic branding, clear scope, deliverables, and structured pricing, while removing test scripts to keep production repo clean."
   },
   {
-    "title": "Dynamic Project Details Engine",
-    "desc": "Built dynamic project-details page and centralized projects-data structure with comprehensive project profiles, challenge-solution breakdowns, architecture blueprints, and quantifiable client impact metrics."
+    "title": "Platform-Wide Button & Navigation Audit",
+    "desc": "Audited 1,100+ clickable elements across 23 pages. Fixed portfolio filter pills, built interactive 3-screen case study viewer with caption crossfades, and updated legal links across 18 landing page templates."
   },
   {
-    "title": "Interactive Tabbed Services Showcase",
-    "desc": "Overhauled homepage and services page tabbed sections with interactive category switching, deep-dive deliverables, tech stack chips, and high-conversion consult CTA buttons."
+    "title": "Subpage Hero Smooth Scroll Engine",
+    "desc": "Resolved base href redirect bug where subpage hero buttons navigated to homepage. Built custom smooth scroll engine with 85px sticky header offset and automatic tab panel opening across all subpages."
   },
   {
-    "title": "Platform-Wide Light Theme Transformation",
-    "desc": "Standardized the entire website across all core pages to JZARR Tech's executive light theme with polished navy typography, subtle slate borders, elevated white cards, and purple brand accents."
+    "title": "Service & Contact Form Pre-Selection",
+    "desc": "Connected URL query parameters to contact consultation form. Selecting any service card automatically pre-fills the corresponding service dropdown, and URL hashes auto-activate relevant service division tabs."
   },
   {
-    "title": "Universal Landing Pages Architecture",
-    "desc": "Synchronized and standardized all 11 dedicated service landing pages with a unified master CSS framework, consistent header navigation, and optimized conversion funnels."
+    "title": "Dev Server Router Architecture Update",
+    "desc": "Updated router.php to accurately simulate Apache clean URLs, static directory indexing, asset delivery, and branded 404 handling across both root pages and nested landing page directories."
   },
   {
-    "title": "Mobile Horizontal Touch Carousels",
-    "desc": "Implemented touch-friendly horizontal swipe carousels with CSS snap points, visible purple scrollbars, and interactive swipe guides for process steps, tech radars, and case study cards."
+    "title": "Git Upstream Sync & Main Branch Tracking",
+    "desc": "Fetched remote branches from GitHub, fast-forward pulled latest commits from origin/main into local workspace, and set up a dedicated local tracking branch for main alongside JzarrTech."
   },
   {
-    "title": "Interactive 2-Step Project Builder",
-    "desc": "Engineered a high-conversion 2-step quotation wizard with an animated progress stepper, modern input fields, and vibrant gradient CTA buttons to boost lead acquisition."
+    "title": "Corporate Holding Rebranding Across 35 Files",
+    "desc": "Replaced all 35 occurrences of A JZARR Group Enterprise with A JZARR Group of Companies across core HTML templates, PHP components, and landing pages with clean UTF-8 encoding without BOM."
   },
   {
-    "title": "Mobile 2-Column Options Grid",
-    "desc": "Optimized mobile service selection into a compact 2-column tile grid with custom squircle icons and check indicators, preventing vertical fatigue and layout clipping."
-  },
-  {
-    "title": "Mobile Viewport and Clutter Optimization",
-    "desc": "Hidden bulky address boxes on mobile screens to prioritize immediate form access, condensed trust guarantees into a 3-badge micro-strip, and eliminated horizontal overflow bugs."
-  },
-  {
-    "title": "Responsive Footer 2-Column Grid",
-    "desc": "Restructured mobile footer into a balanced 2-column grid placing Capabilities and Company side-by-side, cutting unnecessary vertical scroll length while keeping full navigation intact."
-  },
-  {
-    "title": "Executive Proposal Suite Development",
-    "desc": "Designed an official partnership proposal in both 16:9 landscape slides and formal A4 PDF formats with 100% content fidelity and an interactive browser-based presentation viewer."
-  },
-  {
-    "title": "Brand Lockup and Logo Proportion Fix",
-    "desc": "Corrected logo squashing by locking the true 1.0633:1 aspect ratio and built executive corporate brand badges pairing the emblem with crisp typography and subtle borders."
-  },
-  {
-    "title": "Production Workspace Sanitization",
-    "desc": "Cleaned up temporary generation scripts and build folders from the project workspace while preserving secure archives in local backup storage for future client delivery."
+    "title": "Print-Ready Executive Marketing Brochure",
+    "desc": "Engineered official 2-page A4 print-ready marketing brochure PDF on Desktop with vector-sharp typography, official branding, credibility stats, 3D architecture visual, process timeline, and QR CTA."
   }
 ]
