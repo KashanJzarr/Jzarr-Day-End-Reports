@@ -1,42 +1,118 @@
 [
   {
-    "title": "Industry Verticals Section on About Page",
-    "desc": "Engineered a modern Industries section on the About page showcasing core sector competencies, styled consistently with the agency design system and brand theme."
+    "title": "Jzarr Filer Portfolio Assets Update",
+    "desc": "Integrated and optimized newly provided showcase mockup images for the Jzarr Filer enterprise project in the portfolio gallery."
   },
   {
-    "title": "Mobile Horizontal Scroll for Industries",
-    "desc": "Transformed the desktop industries grid into a touch-friendly horizontal swipeable carousel on mobile viewports for a fluid browsing experience."
+    "title": "Projects Data Undefined Key Bug Resolution",
+    "desc": "Resolved PHP notice error on project-details page by fixing the missing status_color array key inside projects-data.php configuration."
   },
   {
-    "title": "Mobile Header Balance & Logo Centering",
-    "desc": "Adjusted mobile navbar padding and flexbox alignment to ensure the brand logo is perfectly centered with equal spacing between margins and the action button."
+    "title": "Dine Draft and Red Apple Mockups Integration",
+    "desc": "Added and configured secondary preview views and mobile mockup displays for both Dine Draft and Red Apple case study showcases."
   },
   {
-    "title": "JZARR CRM 5-Screen Interactive Showcase",
-    "desc": "Integrated 5 distinct high-resolution mockups into the JZARR CRM case study gallery, eliminating duplicate screenshots and adding detailed telemetry captions."
+    "title": "Red Apple View 2 Replacement and Images Cleanup",
+    "desc": "Replaced View 2 screenshot with the correct updated interface image and removed obsolete unused image files from the assets folder."
   },
   {
-    "title": "Case Study Mobile Gallery Touch Optimization",
-    "desc": "Optimized the project details gallery for mobile devices with an interactive swipeable preview strip and visual screen indicator badges."
+    "title": "Contact Page Form and Info Container Alignment",
+    "desc": "Equalized heights of the contact form and direct contact details containers to ensure a perfectly balanced, symmetrical desktop layout."
   },
   {
-    "title": "Project Metrics 2-Column Mobile Grid",
-    "desc": "Refactored project performance metrics into a balanced 2-column grid layout on mobile screens, improving legibility and visual hierarchy."
+    "title": "About Page Our Team Section Initial Implementation",
+    "desc": "Architected and coded the new 'Our Team and Leadership' section for the About page featuring executive and engineering profiles."
   },
   {
-    "title": "Blog Navigation Link in Navbar & Drawer",
-    "desc": "Added the Blog option (/blog) before Contact across desktop and mobile navigation menus, updating sequential drawer numbering across PHP and HTML files."
+    "title": "Sitewide URL Extension Cleanup (.php Removal)",
+    "desc": "Removed .php file extensions from all button links, anchor tags, and redirects across the entire website for clean semantic URLs."
   },
   {
-    "title": "Project-Wise Asset Directory Organization",
-    "desc": "Restructured the assets/images directory into dedicated project folders and populated Pehle Pakistan with 5 unique high-resolution platform screens."
+    "title": "Executive Portrait Optimization for Leadership",
+    "desc": "Processed and cropped corporate portraits for Director Umer and Developer Kashan, updating designations to clean official titles."
   },
   {
-    "title": "Elvify AI Studio 5-Screen Gallery Setup",
-    "desc": "Structured assets/images/elvify-ai and configured 5 unique showcase screens covering templates, mockups, vector library, and neural voiceover."
+    "title": "Interactive Bento Grid UI for Team Section",
+    "desc": "Upgraded the team roster into an interactive Bento grid layout with dynamic category filter tabs and glassmorphic badges."
   },
   {
-    "title": "Clean SEO-Friendly URLs & 301 Redirects",
-    "desc": "Replaced query parameter URLs (/project-details?id=) with clean SEO paths (/project/{slug}), adding automatic 301 redirects and canonical tags."
-  }
+    "title": "Roster Adjustment and 5 Studio Portraits Integration",
+    "desc": "Removed Sherjeel from the company roster and integrated 5 matching corporate studio portraits sharing a cohesive office backdrop."
+  },
+  {
+    "title": "Director Spotlight and 4-Column Team Architecture",
+    "desc": "Restructured section layout with an executive 2-column Director spotlight on top and a 4-card core team grid below, removing contact buttons."
+  },
+  {
+    "title": "Kaif Rajput Role Designation Update",
+    "desc": "Updated Kaif Rajput's department and role designation from 'Product Experience' to 'Product Engineering' across code and templates."
+  },
+  {
+    "title": "Usama Haider Name and Image Asset Correction",
+    "desc": "Corrected spelling from 'Usama Hyder' to 'Usama Haider' across section templates, alt attributes, and associated image filenames."
+  },
+  {
+    "title": "Kaif Rajput Surname and Identity Sync",
+    "desc": "Updated Kaif's surname from 'Kaif Khan' to 'Kaif Rajput' across all web templates, headings, and profile media files."
+  },
+  {
+    "title": "Team Section UI/UX Polish and Layout Balancing",
+    "desc": "Centered the section header, added subtle background depth, optimized card contrast, and formatted the Director bio in an executive quote box."
+  },
+  {
+    "title": "Team Media Directory Audit and Unused Assets Deletion",
+    "desc": "Conducted a project-wide scan and deleted 9 unused SVGs and legacy portrait files from the team images directory, keeping only active media."
+  },
+    {
+      "title": "WhatsApp-Style Real-Time Chat System",
+      "desc": "Transformed Notepad into a full WhatsApp-style chat system with real-time 1-on-1 messaging, conversation list, search filters, timestamps, delivery ticks, and Socket.IO live communication."
+    },
+    {
+      "title": "Group Chat Creation and Management",
+      "desc": "Added team group chats with multi-member selection, group names, descriptions, real-time group broadcasts, and group admin permissions."
+    },
+    {
+      "title": "CRM Lead Discussion Threads",
+      "desc": "Integrated CRM Lead linked chats allowing discussions around specific lead reference numbers with direct 'Open Lead' CRM navigation."
+    },
+    {
+      "title": "WhatsApp-Style Group Info and Members Inspector",
+      "desc": "Built a Group Info modal displaying group details, linked CRM lead card, member count, searchable members list, role badges, and group admin tags."
+    },
+    {
+      "title": "Profile Picture (DP) Upload and Management",
+      "desc": "Added user avatar upload with live preview, update, and deletion, displaying the user DP across portal navigation, messages, and group member lists."
+    },
+    {
+      "title": "Prisma Database Migrations",
+      "desc": "Created and deployed clean Prisma database migrations for chat groups, lead discussions, and user avatar storage with zero disruption to existing data."
+    },
+    {
+      "title": "Portal-Wide Global Notification Sounds",
+      "desc": "Implemented real-time notification alerts that trigger incoming message audio anywhere in the portal, even when browsing CRM, Attendance, or Payroll."
+    },
+    {
+      "title": "10 Synthesized Notification Tones Engine",
+      "desc": "Built a zero-dependency Web Audio API sound synthesizer with 10 crystal-clear notification tones, offering live audio preview for each tone."
+    },
+    {
+      "title": "Custom Tone Preferences for Chat Types",
+      "desc": "Allowed users to configure distinct notification tones for Direct Messages, Group Chats, and Lead Discussions, alongside a master sound toggle."
+    },
+    {
+      "title": "Staging Upload Timeout and S3 Fallback Fix",
+      "desc": "Added automatic client-side canvas image compression to 512x512 (~40KB) and an S3 timeout with graceful local storage fallback to eliminate upload timeouts."
+    },
+    {
+      "title": "Sidebar and Topbar Messenger Rebranding",
+      "desc": "Updated frontend labels from 'Notepad' to 'Messenger' in both the sidebar Workspace menu and the top header quick notification bell."
+    },
+    {
+      "title": "Remove DP Button Contrast and UI Fix",
+      "desc": "Fixed low-contrast text on the Remove DP button with high-visibility white text and trash icon on a solid red background."
+    },
+    {
+      "title": "Build and Runtime Bug Fixes",
+      "desc": "Resolved JSX duplicate attribute errors, fixed NotepadPage state management issues, mounted missing user API routes, and passed all builds with zero errors."
+    }
 ]
