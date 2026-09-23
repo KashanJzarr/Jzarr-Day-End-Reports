@@ -1,34 +1,42 @@
 [
   {
-    "title": "Dr. Asim Enterprise Proposal Design",
-    "desc": "Designed official clinical decision support system proposal in JZARR Tech light theme with authentic branding, clear scope, deliverables, and structured pricing, while removing test scripts to keep production repo clean."
+    "title": "Industry Verticals Section on About Page",
+    "desc": "Engineered a modern Industries section on the About page showcasing core sector competencies, styled consistently with the agency design system and brand theme."
   },
   {
-    "title": "Platform-Wide Button & Navigation Audit",
-    "desc": "Audited 1,100+ clickable elements across 23 pages. Fixed portfolio filter pills, built interactive 3-screen case study viewer with caption crossfades, and updated legal links across 18 landing page templates."
+    "title": "Mobile Horizontal Scroll for Industries",
+    "desc": "Transformed the desktop industries grid into a touch-friendly horizontal swipeable carousel on mobile viewports for a fluid browsing experience."
   },
   {
-    "title": "Subpage Hero Smooth Scroll Engine",
-    "desc": "Resolved base href redirect bug where subpage hero buttons navigated to homepage. Built custom smooth scroll engine with 85px sticky header offset and automatic tab panel opening across all subpages."
+    "title": "Mobile Header Balance & Logo Centering",
+    "desc": "Adjusted mobile navbar padding and flexbox alignment to ensure the brand logo is perfectly centered with equal spacing between margins and the action button."
   },
   {
-    "title": "Service & Contact Form Pre-Selection",
-    "desc": "Connected URL query parameters to contact consultation form. Selecting any service card automatically pre-fills the corresponding service dropdown, and URL hashes auto-activate relevant service division tabs."
+    "title": "JZARR CRM 5-Screen Interactive Showcase",
+    "desc": "Integrated 5 distinct high-resolution mockups into the JZARR CRM case study gallery, eliminating duplicate screenshots and adding detailed telemetry captions."
   },
   {
-    "title": "Dev Server Router Architecture Update",
-    "desc": "Updated router.php to accurately simulate Apache clean URLs, static directory indexing, asset delivery, and branded 404 handling across both root pages and nested landing page directories."
+    "title": "Case Study Mobile Gallery Touch Optimization",
+    "desc": "Optimized the project details gallery for mobile devices with an interactive swipeable preview strip and visual screen indicator badges."
   },
   {
-    "title": "Git Upstream Sync & Main Branch Tracking",
-    "desc": "Fetched remote branches from GitHub, fast-forward pulled latest commits from origin/main into local workspace, and set up a dedicated local tracking branch for main alongside JzarrTech."
+    "title": "Project Metrics 2-Column Mobile Grid",
+    "desc": "Refactored project performance metrics into a balanced 2-column grid layout on mobile screens, improving legibility and visual hierarchy."
   },
   {
-    "title": "Corporate Holding Rebranding Across 35 Files",
-    "desc": "Replaced all 35 occurrences of A JZARR Group Enterprise with A JZARR Group of Companies across core HTML templates, PHP components, and landing pages with clean UTF-8 encoding without BOM."
+    "title": "Blog Navigation Link in Navbar & Drawer",
+    "desc": "Added the Blog option (/blog) before Contact across desktop and mobile navigation menus, updating sequential drawer numbering across PHP and HTML files."
   },
   {
-    "title": "Print-Ready Executive Marketing Brochure",
-    "desc": "Engineered official 2-page A4 print-ready marketing brochure PDF on Desktop with vector-sharp typography, official branding, credibility stats, 3D architecture visual, process timeline, and QR CTA."
+    "title": "Project-Wise Asset Directory Organization",
+    "desc": "Restructured the assets/images directory into dedicated project folders and populated Pehle Pakistan with 5 unique high-resolution platform screens."
+  },
+  {
+    "title": "Elvify AI Studio 5-Screen Gallery Setup",
+    "desc": "Structured assets/images/elvify-ai and configured 5 unique showcase screens covering templates, mockups, vector library, and neural voiceover."
+  },
+  {
+    "title": "Clean SEO-Friendly URLs & 301 Redirects",
+    "desc": "Replaced query parameter URLs (/project-details?id=) with clean SEO paths (/project/{slug}), adding automatic 301 redirects and canonical tags."
   }
 ]
