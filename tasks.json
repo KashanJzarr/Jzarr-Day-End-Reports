@@ -1,118 +1,94 @@
 [
   {
-    "title": "Jzarr Filer Portfolio Assets Update",
-    "desc": "Integrated and optimized newly provided showcase mockup images for the Jzarr Filer enterprise project in the portfolio gallery."
+    "title": "Services Mega Dropdown in Navigation Bar",
+    "desc": "Designed and implemented a responsive mega dropdown in navbar grouping all 15 services into categories with icons, subtext, and smooth hover transitions, while preserving direct navigation to the main services hub."
   },
   {
-    "title": "Projects Data Undefined Key Bug Resolution",
-    "desc": "Resolved PHP notice error on project-details page by fixing the missing status_color array key inside projects-data.php configuration."
+    "title": "Centralized Services Data Architecture",
+    "desc": "Created includes/data/services-data.php storing structured data for 15 services, including SEO tags, deliverables, tech stacks, processes, and FAQs to power the service catalog and individual detail pages."
   },
   {
-    "title": "Dine Draft and Red Apple Mockups Integration",
-    "desc": "Added and configured secondary preview views and mobile mockup displays for both Dine Draft and Red Apple case study showcases."
+    "title": "Dedicated SEO Service Detail Pages",
+    "desc": "Created 15 standalone service pages inside the services/ directory with unique meta titles, descriptions, breadcrumbs, JSON-LD schema (Service, FAQPage), and interactive UI sections for high SEO ranking."
   },
   {
-    "title": "Red Apple View 2 Replacement and Images Cleanup",
-    "desc": "Replaced View 2 screenshot with the correct updated interface image and removed obsolete unused image files from the assets folder."
+    "title": "FontAwesome Local Assets and CSP Header Fix",
+    "desc": "Resolved missing icons on production by downloading FontAwesome 6 locally to assets/webfonts and updating the .htaccess Content Security Policy (CSP) header to whitelist style and font sources."
   },
   {
-    "title": "Contact Page Form and Info Container Alignment",
-    "desc": "Equalized heights of the contact form and direct contact details containers to ensure a perfectly balanced, symmetrical desktop layout."
+    "title": "Apache Routing and Clean URL Configuration",
+    "desc": "Configured .htaccess rewrite rules and router.php for clean URLs (/services/{slug}), prevented Apache mod_dir conflicts on the services directory, and added 301 redirects for legacy routes."
   },
   {
-    "title": "About Page Our Team Section Initial Implementation",
-    "desc": "Architected and coded the new 'Our Team and Leadership' section for the About page featuring executive and engineering profiles."
+    "title": "Directory Structure and Index File Cleanup",
+    "desc": "Enforced single index.php policy by removing services/index.php, deleted the temporary scratch directory, and restored root services.php as the standalone services hub."
   },
   {
-    "title": "Sitewide URL Extension Cleanup (.php Removal)",
-    "desc": "Removed .php file extensions from all button links, anchor tags, and redirects across the entire website for clean semantic URLs."
+    "title": "Query Parameter Cleanup Across Website",
+    "desc": "Replaced all query parameter URLs (contact?service=...) with clean /contact links across service pages, project details, and tabs, adding automated 301 parameter stripping in contact.php."
   },
   {
-    "title": "Executive Portrait Optimization for Leadership",
-    "desc": "Processed and cropped corporate portraits for Director Umer and Developer Kashan, updating designations to clean official titles."
+    "title": "Removal of Deprecated service-details.php",
+    "desc": "Permanently deleted obsolete service-details.php after fully transitioning all 15 services to dedicated, SEO-optimized individual files with clean routing."
   },
   {
-    "title": "Interactive Bento Grid UI for Team Section",
-    "desc": "Upgraded the team roster into an interactive Bento grid layout with dynamic category filter tabs and glassmorphic badges."
+    "title": "Services Tabbed Section and CTA Refactoring",
+    "desc": "Updated includes/sections/services-tabbed.php to link directly to new individual service pages and replaced parameter-based inquiry buttons with clean contact navigation."
   },
-  {
-    "title": "Roster Adjustment and 5 Studio Portraits Integration",
-    "desc": "Removed Sherjeel from the company roster and integrated 5 matching corporate studio portraits sharing a cohesive office backdrop."
-  },
-  {
-    "title": "Director Spotlight and 4-Column Team Architecture",
-    "desc": "Restructured section layout with an executive 2-column Director spotlight on top and a 4-card core team grid below, removing contact buttons."
-  },
-  {
-    "title": "Kaif Rajput Role Designation Update",
-    "desc": "Updated Kaif Rajput's department and role designation from 'Product Experience' to 'Product Engineering' across code and templates."
-  },
-  {
-    "title": "Usama Haider Name and Image Asset Correction",
-    "desc": "Corrected spelling from 'Usama Hyder' to 'Usama Haider' across section templates, alt attributes, and associated image filenames."
-  },
-  {
-    "title": "Kaif Rajput Surname and Identity Sync",
-    "desc": "Updated Kaif's surname from 'Kaif Khan' to 'Kaif Rajput' across all web templates, headings, and profile media files."
-  },
-  {
-    "title": "Team Section UI/UX Polish and Layout Balancing",
-    "desc": "Centered the section header, added subtle background depth, optimized card contrast, and formatted the Director bio in an executive quote box."
-  },
-  {
-    "title": "Team Media Directory Audit and Unused Assets Deletion",
-    "desc": "Conducted a project-wide scan and deleted 9 unused SVGs and legacy portrait files from the team images directory, keeping only active media."
-  },
-    {
-      "title": "WhatsApp-Style Real-Time Chat System",
-      "desc": "Transformed Notepad into a full WhatsApp-style chat system with real-time 1-on-1 messaging, conversation list, search filters, timestamps, delivery ticks, and Socket.IO live communication."
+   {
+      "title": "Persistent Profile Picture Database Storage Fix",
+      "desc": "Resolved avatar loss after logout by ensuring user profile pictures are permanently persisted in the database and properly reloaded during authentication across sessions."
     },
     {
-      "title": "Group Chat Creation and Management",
-      "desc": "Added team group chats with multi-member selection, group names, descriptions, real-time group broadcasts, and group admin permissions."
+      "title": "Notification Bell Direct Chat Navigation",
+      "desc": "Enabled deep-linking on header notification items, allowing users to click any incoming message alert to navigate directly into the relevant teammate or group chat."
     },
     {
-      "title": "CRM Lead Discussion Threads",
-      "desc": "Integrated CRM Lead linked chats allowing discussions around specific lead reference numbers with direct 'Open Lead' CRM navigation."
+      "title": "Interactive Profile Picture Cropping Tool",
+      "desc": "Added a WhatsApp-style modal allowing users to zoom, drag, and crop their profile photo to a perfect circular aspect ratio prior to saving."
     },
     {
-      "title": "WhatsApp-Style Group Info and Members Inspector",
-      "desc": "Built a Group Info modal displaying group details, linked CRM lead card, member count, searchable members list, role badges, and group admin tags."
+      "title": "Fullscreen Profile Photo Lightbox Viewer",
+      "desc": "Implemented a WhatsApp-style lightbox modal enabling users to view full-resolution, enlarged profile pictures by clicking any user avatar in the interface."
     },
     {
-      "title": "Profile Picture (DP) Upload and Management",
-      "desc": "Added user avatar upload with live preview, update, and deletion, displaying the user DP across portal navigation, messages, and group member lists."
+      "title": "Chat Header Avatar and Status Display Fix",
+      "desc": "Fixed the conversation header bar to consistently display the active recipient's avatar photo, online status, and role metadata."
     },
     {
-      "title": "Prisma Database Migrations",
-      "desc": "Created and deployed clean Prisma database migrations for chat groups, lead discussions, and user avatar storage with zero disruption to existing data."
+      "title": "Cloud Storage Audio Attachment Support",
+      "desc": "Extended DigitalOcean Spaces storage services and backend upload routes to support multipart audio uploads for chat voice notes."
     },
     {
-      "title": "Portal-Wide Global Notification Sounds",
-      "desc": "Implemented real-time notification alerts that trigger incoming message audio anywhere in the portal, even when browsing CRM, Attendance, or Payroll."
+      "title": "WhatsApp-Style Voice Note Audio Recorder",
+      "desc": "Built an in-chat voice recorder using the MediaRecorder API featuring a live recording timer, recording wave indicator, and quick cancel/send controls."
     },
     {
-      "title": "10 Synthesized Notification Tones Engine",
-      "desc": "Built a zero-dependency Web Audio API sound synthesizer with 10 crystal-clear notification tones, offering live audio preview for each tone."
+      "title": "In-Bubble Voice Note Audio Player",
+      "desc": "Created a custom inline audio player inside chat bubbles featuring play/pause controls, seekable progress bar, and duration tracking."
     },
     {
-      "title": "Custom Tone Preferences for Chat Types",
-      "desc": "Allowed users to configure distinct notification tones for Direct Messages, Group Chats, and Lead Discussions, alongside a master sound toggle."
+      "title": "Photo-Only Chat Image Attachment Feature",
+      "desc": "Added photo-sharing functionality strictly restricted to image formats, complete with pre-send thumbnail previews, optional captions, and lightbox viewing."
     },
     {
-      "title": "Staging Upload Timeout and S3 Fallback Fix",
-      "desc": "Added automatic client-side canvas image compression to 512x512 (~40KB) and an S3 timeout with graceful local storage fallback to eliminate upload timeouts."
+      "title": "Message Bubble UI Cleanup and Text Stripping",
+      "desc": "Removed delete buttons from chat bubbles and eliminated auto-generated 'Attachment:' labels and filenames beneath voice notes and photos."
     },
     {
-      "title": "Sidebar and Topbar Messenger Rebranding",
-      "desc": "Updated frontend labels from 'Notepad' to 'Messenger' in both the sidebar Workspace menu and the top header quick notification bell."
+      "title": "Group Creation Teammate Search Filter",
+      "desc": "Introduced a real-time search input in the Create Group modal to swiftly filter and select colleagues by name, role, or email address."
     },
     {
-      "title": "Remove DP Button Contrast and UI Fix",
-      "desc": "Fixed low-contrast text on the Remove DP button with high-visibility white text and trash icon on a solid red background."
+      "title": "Searchable Teammate List for Lead Discussions",
+      "desc": "Replaced the static dropdown in the Lead Discussion setup with an interactive, searchable teammate list with avatars and role badges."
     },
     {
-      "title": "Build and Runtime Bug Fixes",
-      "desc": "Resolved JSX duplicate attribute errors, fixed NotepadPage state management issues, mounted missing user API routes, and passed all builds with zero errors."
+      "title": "Search Input Icon and Placeholder Spacing Polish",
+      "desc": "Fixed CSS specificity issues across all search bars, adding 44px padding to guarantee clean spacing between the search icon and placeholder text."
+    },
+    {
+      "title": "Production Build and Integration Verification",
+      "desc": "Successfully built and verified all frontend Vite assets and backend TypeScript services, confirming zero regressions or runtime errors."
     }
 ]
