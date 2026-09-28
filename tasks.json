@@ -1,94 +1,50 @@
 [
   {
-    "title": "Services Mega Dropdown in Navigation Bar",
-    "desc": "Designed and implemented a responsive mega dropdown in navbar grouping all 15 services into categories with icons, subtext, and smooth hover transitions, while preserving direct navigation to the main services hub."
+    "title": "Messenger Header Button Conversion",
+    "desc": "Converted the top header messenger icon from an awkward floating popup into a direct single-click navigation button to streamline access to the chat workspace."
   },
   {
-    "title": "Centralized Services Data Architecture",
-    "desc": "Created includes/data/services-data.php storing structured data for 15 services, including SEO tags, deliverables, tech stacks, processes, and FAQs to power the service catalog and individual detail pages."
+    "title": "Notification-to-Chat Deep Linking",
+    "desc": "Integrated deep linking from notification toasts directly into specific chat conversations, automatically opening the sender's thread upon clicking the alert."
   },
   {
-    "title": "Dedicated SEO Service Detail Pages",
-    "desc": "Created 15 standalone service pages inside the services/ directory with unique meta titles, descriptions, breadcrumbs, JSON-LD schema (Service, FAQPage), and interactive UI sections for high SEO ranking."
+    "title": "Sticky Headers for Lead Management Tables",
+    "desc": "Fixed the scrolling layout across lead management tables by locking the table headers in place so only the table body rows scroll, keeping columns clear."
   },
   {
-    "title": "FontAwesome Local Assets and CSP Header Fix",
-    "desc": "Resolved missing icons on production by downloading FontAwesome 6 locally to assets/webfonts and updating the .htaccess Content Security Policy (CSP) header to whitelist style and font sources."
+    "title": "Sticky Table Header for Finance Ledger",
+    "desc": "Implemented fixed table header positioning on the Finance dashboard ledger, preventing the header from scrolling out of view when reviewing large payment queues."
   },
   {
-    "title": "Apache Routing and Clean URL Configuration",
-    "desc": "Configured .htaccess rewrite rules and router.php for clean URLs (/services/{slug}), prevented Apache mod_dir conflicts on the services directory, and added 301 redirects for legacy routes."
+    "title": "Lead Refund Request Submission Workflow",
+    "desc": "Built the frontend interface and backend endpoints for initiating lead refund requests, capturing refund amount, reason, and client bank details."
   },
   {
-    "title": "Directory Structure and Index File Cleanup",
-    "desc": "Enforced single index.php policy by removing services/index.php, deleted the temporary scratch directory, and restored root services.php as the standalone services hub."
+    "title": "Refund Review and Approval Engine",
+    "desc": "Developed approval logic allowing authorized managers to inspect, approve, or reject refund requests with dedicated audit logs and status transitions."
   },
   {
-    "title": "Query Parameter Cleanup Across Website",
-    "desc": "Replaced all query parameter URLs (contact?service=...) with clean /contact links across service pages, project details, and tabs, adding automated 301 parameter stripping in contact.php."
+    "title": "Finance Refund Payout Processing Modal",
+    "desc": "Created a payout modal for finance officers to record transaction IDs, payout dates, and disbursement notes when funds are transferred back to clients."
   },
   {
-    "title": "Removal of Deprecated service-details.php",
-    "desc": "Permanently deleted obsolete service-details.php after fully transitioning all 15 services to dedicated, SEO-optimized individual files with clean routing."
+    "title": "Total Refund KPI Card on Finance Dashboard",
+    "desc": "Added a dedicated Total Refund metric box to the Finance dashboard, calculating cumulative refunded amounts and lead counts for real-time visibility."
   },
   {
-    "title": "Services Tabbed Section and CTA Refactoring",
-    "desc": "Updated includes/sections/services-tabbed.php to link directly to new individual service pages and replaced parameter-based inquiry buttons with clean contact navigation."
+    "title": "Payments Dashboard Net Revenue Deduction",
+    "desc": "Integrated total refund statistics into the Payments overview dashboard, automatically deducting refunded amounts from gross collections to calculate net income."
   },
-   {
-      "title": "Persistent Profile Picture Database Storage Fix",
-      "desc": "Resolved avatar loss after logout by ensuring user profile pictures are permanently persisted in the database and properly reloaded during authentication across sessions."
-    },
-    {
-      "title": "Notification Bell Direct Chat Navigation",
-      "desc": "Enabled deep-linking on header notification items, allowing users to click any incoming message alert to navigate directly into the relevant teammate or group chat."
-    },
-    {
-      "title": "Interactive Profile Picture Cropping Tool",
-      "desc": "Added a WhatsApp-style modal allowing users to zoom, drag, and crop their profile photo to a perfect circular aspect ratio prior to saving."
-    },
-    {
-      "title": "Fullscreen Profile Photo Lightbox Viewer",
-      "desc": "Implemented a WhatsApp-style lightbox modal enabling users to view full-resolution, enlarged profile pictures by clicking any user avatar in the interface."
-    },
-    {
-      "title": "Chat Header Avatar and Status Display Fix",
-      "desc": "Fixed the conversation header bar to consistently display the active recipient's avatar photo, online status, and role metadata."
-    },
-    {
-      "title": "Cloud Storage Audio Attachment Support",
-      "desc": "Extended DigitalOcean Spaces storage services and backend upload routes to support multipart audio uploads for chat voice notes."
-    },
-    {
-      "title": "WhatsApp-Style Voice Note Audio Recorder",
-      "desc": "Built an in-chat voice recorder using the MediaRecorder API featuring a live recording timer, recording wave indicator, and quick cancel/send controls."
-    },
-    {
-      "title": "In-Bubble Voice Note Audio Player",
-      "desc": "Created a custom inline audio player inside chat bubbles featuring play/pause controls, seekable progress bar, and duration tracking."
-    },
-    {
-      "title": "Photo-Only Chat Image Attachment Feature",
-      "desc": "Added photo-sharing functionality strictly restricted to image formats, complete with pre-send thumbnail previews, optional captions, and lightbox viewing."
-    },
-    {
-      "title": "Message Bubble UI Cleanup and Text Stripping",
-      "desc": "Removed delete buttons from chat bubbles and eliminated auto-generated 'Attachment:' labels and filenames beneath voice notes and photos."
-    },
-    {
-      "title": "Group Creation Teammate Search Filter",
-      "desc": "Introduced a real-time search input in the Create Group modal to swiftly filter and select colleagues by name, role, or email address."
-    },
-    {
-      "title": "Searchable Teammate List for Lead Discussions",
-      "desc": "Replaced the static dropdown in the Lead Discussion setup with an interactive, searchable teammate list with avatars and role badges."
-    },
-    {
-      "title": "Search Input Icon and Placeholder Spacing Polish",
-      "desc": "Fixed CSS specificity issues across all search bars, adding 44px padding to guarantee clean spacing between the search icon and placeholder text."
-    },
-    {
-      "title": "Production Build and Integration Verification",
-      "desc": "Successfully built and verified all frontend Vite assets and backend TypeScript services, confirming zero regressions or runtime errors."
-    }
+  {
+    "title": "Refund Data Columns in CSV Ledger Export",
+    "desc": "Enhanced payments CSV reporting by adding refund status and refunded amount columns, ensuring financial exports match exact audited balance sheets."
+  },
+  {
+    "title": "Real-Time Emoji Reactions Socket Pipeline",
+    "desc": "Built backend services, controllers, and socket event emitters (`chat:reaction`) enabling live emoji reactions on chat messages across all connected clients."
+  },
+  {
+    "title": "Non-Breaking Metadata Encoding Architecture",
+    "desc": "Engineered a comment-based encoding mechanism for message replies, forwards, and reactions to deliver WhatsApp features with zero database schema migrations."
+  }
 ]
